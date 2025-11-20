@@ -66,6 +66,204 @@ Click an image to view full size:
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
 cd Multi-Tier-App-Troubleshooting-Playground
 # Open README.md to follow step-by-step screenshots
+Here's a complete "Troubleshooting Scenarios" section you can add to your README. Copy and paste this right after your "How to Use" section:
+markdown## 🔧 Troubleshooting Scenarios
+
+This playground includes common real-world issues you'll encounter in production CloudOps environments. Each scenario demonstrates systematic troubleshooting from symptom to resolution.
+
+### Scenario 1: EC2 Instance Running but SSH Connection Refused
+**Symptom:**
+```bash
+ssh -i my-key.pem ec2-user@
+# Connection timed out
+```
+
+**Investigation Steps:**
+1. Verify instance state: `aws ec2 describe-instances --instance-ids <id>`
+2. Check security group rules: `aws ec2 describe-security-groups --group-ids <sg-id>`
+3. Confirm public IP assignment
+4. Test network connectivity: `ping <public-ip>`
+
+**Root Cause:** Security group missing inbound rule for port 22 from your IP address
+
+**Solution:**
+```bash
+aws ec2 authorize-security-group-ingress \
+  --group-id  \
+  --protocol tcp \
+  --port 22 \
+  --cidr /32
+```
+
+**Prevention:** Always validate security group rules immediately after EC2 creation. Use least-privilege access (specific IP ranges, not 0.0.0.0/0).
+
+---
+
+### Scenario 2: Apache Installed but Web Server Not Responding
+**Symptom:**
+```bash
+curl http://localhost
+# curl: (7) Failed to connect to localhost port 80
+```
+
+**Investigation Steps:**
+1. Check Apache service status: `sudo systemctl status httpd`
+2. Verify Apache is listening: `sudo netstat -tlnp | grep :80`
+3. Check system logs: `sudo journalctl -u httpd -n 50`
+4. Test local connectivity: `curl -I http://127.0.0.1`
+
+**Root Cause:** Apache service installed but not started/enabled
+
+**Solution:**
+```bash
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
+```
+
+**Prevention:** Always verify service status after installation. Use `systemctl enable` to ensure service survives reboots.
+
+---
+
+### Scenario 3: Backend Cannot Connect to Database Tier
+**Symptom:**
+Application logs show: `Connection refused: Unable to connect to database on port 3306`
+
+**Investigation Steps:**
+1. Verify database EC2 instance is running
+2. Check security group allows port 3306 from backend tier
+3. Test connectivity from backend: `telnet <db-private-ip> 3306`
+4. Verify IAM role attached to backend instance
+5. Check database service: `sudo systemctl status mariadb`
+
+**Root Cause:** Security group for database tier doesn't allow inbound traffic on port 3306 from backend security group
+
+**Solution:**
+```bash
+aws ec2 authorize-security-group-ingress \
+  --group-id  \
+  --protocol tcp \
+  --port 3306 \
+  --source-group 
+```
+
+**Prevention:** Document tier-to-tier connectivity requirements. Use security group references instead of IP ranges for internal communication.
+
+---
+
+### Scenario 4: IAM Role Permissions Denied
+**Symptom:**
+```bash
+aws s3 ls s3://my-bucket
+# An error occurred (AccessDenied): User is not authorized
+```
+
+**Investigation Steps:**
+1. Verify IAM role is attached: `aws sts get-caller-identity`
+2. Review role policies: `aws iam get-role --role-name <role-name>`
+3. Check trust relationships
+4. Test with AWS CLI: `aws s3 ls --debug`
+
+**Root Cause:** IAM role missing required S3 permissions or not attached to EC2 instance
+
+**Solution:**
+```bash
+# Attach role to instance
+aws ec2 associate-iam-instance-profile \
+  --instance-id  \
+  --iam-instance-profile Name=
+
+# Update role policy with required permissions
+aws iam put-role-policy --role-name  --policy-name S3Access --policy-document file://policy.json
+```
+
+**Prevention:** Use IAM policy simulator to test permissions before deployment. Follow least-privilege principle.
+
+---
+
+### Scenario 5: High CPU Usage on Frontend Tier
+**Symptom:**
+CloudWatch alarm triggered: CPU utilization at 95% for 10+ minutes
+
+**Investigation Steps:**
+1. Check CloudWatch metrics: `aws cloudwatch get-metric-statistics`
+2. SSH into instance and run: `top` or `htop`
+3. Identify process: `ps aux --sort=-%cpu | head -10`
+4. Check Apache access logs: `sudo tail -f /var/log/httpd/access_log`
+5. Review error logs: `sudo tail -f /var/log/httpd/error_log`
+
+**Root Cause:** Unexpected traffic spike or runaway process consuming resources
+
+**Solution:**
+```bash
+# Immediate: Restart problematic service
+sudo systemctl restart httpd
+
+# Short-term: Add more capacity
+aws autoscaling set-desired-capacity --auto-scaling-group-name  --desired-capacity 3
+
+# Long-term: Configure auto-scaling based on CPU metrics
+```
+
+**Prevention:** Implement CloudWatch alarms, auto-scaling policies, and load testing before production deployment.
+
+---
+
+## 🎯 Key Troubleshooting Commands Reference
+```bash
+# System Health
+uptime
+df -h
+free -m
+top
+
+# Network Diagnostics
+netstat -tlnp
+ss -tulpn
+ping 
+telnet  
+curl -I 
+
+# Service Management
+sudo systemctl status 
+sudo systemctl restart 
+sudo journalctl -u  -n 50
+
+# AWS CLI
+aws ec2 describe-instances
+aws ec2 describe-security-groups
+aws logs tail /aws/ec2/ --follow
+
+# Log Analysis
+sudo tail -f /var/log/messages
+sudo tail -f /var/log/httpd/error_log
+sudo grep -i error /var/log/httpd/error_log
+```
+
+---
+
+## 📚 What I Learned
+
+**Technical Skills:**
+- IAM role creation and policy management for least-privilege access
+- Multi-tier architecture security group configuration
+- Systematic troubleshooting methodology: symptom → investigation → root cause → solution
+- Apache web server deployment, configuration, and debugging
+- AWS CLI automation for infrastructure management
+
+**Operational Insights:**
+- Security groups are stateful - understanding inbound/outbound rules is critical
+- Always verify service status after installation and configuration changes
+- Documentation is essential - future-you (or your team) will thank you
+- Testing connectivity between tiers early prevents cascading failures
+- CloudWatch metrics and logs are your first stop when troubleshooting
+
+**What I'd Do Differently:**
+- Implement infrastructure as code (Terraform) from the start for repeatability
+- Add automated health checks and monitoring before deployment
+- Create runbooks for each common failure scenario
+- Use parameter store for configuration management instead of hardcoded values
+
 📬 Contact
 You can reach me professionally here:
 

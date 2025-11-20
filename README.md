@@ -1,105 +1,30 @@
 🌟 Multi-Tier App Troubleshooting Playground 🛠️
+<p align="center"> <img src="https://img.shields.io/badge/Multi-Tier%20Troubleshooting-Playground-brightgreen?style=for-the-badge&logo=github" alt="Project Banner"/> </p> <p align="center"> <img src="https://img.shields.io/github/repo-size/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Repo Size"/> <img src="https://img.shields.io/github/last-commit/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Last Commit"/> <img src="https://img.shields.io/github/issues/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Issues"/> <img src="https://img.shields.io/github/license/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="License"/> </p>
+📝 Overview
+This repo is a hands-on Multi-Tier App troubleshooting playground for AWS CloudOps, demonstrating:
 
+EC2 setup and SSH connections
 
+IAM role creation and policies
 
+Apache installation and service management
 
+Backend and database directory structures
 
+End-to-end step-by-step lab for troubleshooting
 
-
-
-🚀 Overview
-Welcome to the Multi-Tier App Troubleshooting Playground. This repo simulates real-world scenarios for:
-
-AWS EC2 & SSH troubleshooting
-
-Backend & Apache debugging
-
-Database configuration and troubleshooting
-
-Docker multi-tier environments
-
-Everything is visually guided with screenshots for maximum clarity — perfect for portfolio, interviews, or practice labs.
-
-🏗️ Module & Step Status
-Step	Module	Status
-1	EC2 / SSH	
-2	Repo Setup	
-3	Apache Service	
-4	Backend Directory	
-5	Database Directory	
-6	Apache Installed	
-7	EC2 Details	
-8	IAM Role	
-9	General Screenshot	
-10	SSH Confirm	
-11	SSH Success	
-12	System Info	
-📸 Step-by-Step Screenshots
-Step 1 — EC2 Running
-
-Step 2 — Repo Cloned
-
-Step 3 — Apache Start & Enable
-
-Step 4 — Backend Directory Structure
-
-Step 5 — Database Directory Structure
-
-Step 6 — Apache Installed
-
-Step 7 — EC2 Details
-
-Step 8 — IAM Role
-
-Step 9 — General Screenshot
-
-Step 10 — SSH Confirm
-
-Step 11 — SSH Success
-
-Step 12 — System Info
-
-All screenshots are in the screenshots/ folder. Click to view full-size on GitHub.
-
-🗂️ Folder Structure
+📂 Folder Structure
 Multi-Tier-App-Troubleshooting-Playground/
 ├─ backend/
 ├─ database/
 ├─ docker/
 ├─ screenshots/
 └─ README.md
-⚡ How to Use
-Clone the repo:
+📸 Step-by-Step Screenshots
+Click a screenshot to view full-size:
 
+<p align="center"> <a href="screenshots/Multi_01_cloned.png"><img src="screenshots/Multi_01_cloned.png" alt="Step 1" width="400"/></a> <a href="screenshots/Multi_02_CLI_configured.png"><img src="screenshots/Multi_02_CLI_configured.png" alt="Step 2" width="400"/></a> <a href="screenshots/Multi_03_IAM_Role_Creation_Complete.png"><img src="screenshots/Multi_03_IAM_Role_Creation_Complete.png" alt="Step 3" width="400"/></a> <a href="screenshots/Multi_04_EC2_Instance_List.png"><img src="screenshots/Multi_04_EC2_Instance_List.png" alt="Step 4" width="400"/></a> <a href="screenshots/Multi_05_EC2_Instance_Details.png"><img src="screenshots/Multi_05_EC2_Instance_Details.png" alt="Step 5" width="400"/></a> <a href="screenshots/Multi_06_Security_Group_Rules.png"><img src="screenshots/Multi_06_Security_Group_Rules.png" alt="Step 6" width="400"/></a> <a href="screenshots/Multi_07_SSH_Key_Generated.png"><img src="screenshots/Multi_07_SSH_Key_Generated.png" alt="Step 7" width="400"/></a> <a href="screenshots/Multi_08_-Frontend-Role.png"><img src="screenshots/Multi_08_-Frontend-Role.png" alt="Step 8" width="400"/></a> <a href="screenshots/Multi_09_Ec2_Running.png"><img src="screenshots/Multi_09_Ec2_Running.png" alt="Step 9" width="400"/></a> <a href="screenshots/Multi_10_Repo_Cloned.png"><img src="screenshots/Multi_10_Repo_Cloned.png" alt="Step 10" width="400"/></a> <a href="screenshots/Multi_14_Apache_Start_Enable.png"><img src="screenshots/Multi_14_Apache_Start_Enable.png" alt="Step 11" width="400"/></a> <a href="screenshots/Multi_15_Backend_Directory_Structure.png"><img src="screenshots/Multi_15_Backend_Directory_Structure.png" alt="Step 12" width="400"/></a> <a href="screenshots/Multi_16_Database_Directory_Structure.png"><img src="screenshots/Multi_16_Database_Directory_Structure.png" alt="Step 13" width="400"/></a> <a href="screenshots/Multi_Apache_installed.png"><img src="screenshots/Multi_Apache_installed.png" alt="Step 14" width="400"/></a> <a href="screenshots/Multi_Ec2_details.png"><img src="screenshots/Multi_Ec2_details.png" alt="Step 15" width="400"/></a> <a href="screenshots/Multi_iam_role.png"><img src="screenshots/Multi_iam_role.png" alt="Step 16" width="400"/></a> <a href="screenshots/Multi_screenshot.png"><img src="screenshots/Multi_screenshot.png" alt="Step 17" width="400"/></a> <a href="screenshots/Multi_ssh_confirm.png"><img src="screenshots/Multi_ssh_confirm.png" alt="Step 18" width="400"/></a> <a href="screenshots/Multi_ssh_success.png"><img src="screenshots/Multi_ssh_success.png" alt="Step 19" width="400"/></a> <a href="screenshots/Multi_system_info.png"><img src="screenshots/Multi_system_info.png" alt="Step 20" width="400"/></a> </p>
+⚡ How to Use
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
 cd Multi-Tier-App-Troubleshooting-Playground
-Start Docker (if required):
-
-docker-compose up
-Follow the step-by-step screenshots for troubleshooting.
-
-Inspect logs, fix issues, verify with screenshots.
-
-🎯 Learning Outcomes
-Hands-on AWS CloudOps & NOC troubleshooting
-
-Multi-tier app debugging experience
-
-Docker & Apache workflow mastery
-
-Portfolio-ready GitHub project with visual documentation
-
-💡 Pro Tips
-Fail fast — troubleshooting teaches more than success
-
-Logs can mislead — always analyze like a detective
-
-Break things intentionally to understand root causes
-
-Showcase your problem-solving skills using this repo
-
-🔗 Links
-GitHub Repo
-
-Screenshots in screenshots/ folder
-
+# Open README.md to follow step-by-step screenshots

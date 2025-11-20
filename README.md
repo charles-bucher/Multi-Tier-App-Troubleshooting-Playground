@@ -1,38 +1,111 @@
 🌟 Multi-Tier App Troubleshooting Playground 🛠️
-<p align="center"> <img src="https://img.shields.io/badge/Multi-Tier%20Troubleshooting-Playground-brightgreen?style=for-the-badge&logo=github" alt="Project Banner"/> </p> <p align="center"> <img src="https://img.shields.io/github/repo-size/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Repo Size"/> <img src="https://img.shields.io/github/last-commit/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Last Commit"/> <img src="https://img.shields.io/github/issues/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="Issues"/> <img src="https://img.shields.io/github/license/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=flat-square" alt="License"/> </p>
+A hands-on AWS CloudOps lab for real-world troubleshooting, break/fix, and systems debugging.
+
+<p align="center"> <img src="https://img.shields.io/github/repo-size/charles-bucher/Multi-Tier-App-Troubleshooting-Playground">&nbsp; <img src="https://img.shields.io/github/last-commit/charles-bucher/Multi-Tier-App-Troubleshooting-Playground">&nbsp; <img src="https://img.shields.io/github/issues/charles-bucher/Multi-Tier-App-Troubleshooting-Playground">&nbsp; <img src="https://img.shields.io/github/license/charles-bucher/Multi-Tier-App-Troubleshooting-Playground"> </p>
 📝 Overview
-This repo is a hands-on Multi-Tier App troubleshooting playground for AWS CloudOps, demonstrating:
+This repo is a practical troubleshooting environment that mirrors what CloudOps and Support Engineers face daily.
 
-EC2 setup and SSH connections
+You’ll walk through:
 
-IAM role creation and policies
+EC2 provisioning + SSH troubleshooting
 
-Apache installation and service management
+IAM roles, instance profiles, policy issues
 
-Backend and database directory structures
+Apache installation + service debugging
 
-End-to-end step-by-step lab for troubleshooting
+Backend → Database connectivity failures
+
+Multi-tier routing + app-level break/fix
+
+Screenshots for every major step
+
+Realistic AWS problem-solving patterns
+
+Perfect for Cloud Support, NOC, CloudOps, DevOps foundations, and interview prep.
 
 📂 Folder Structure
 Multi-Tier-App-Troubleshooting-Playground/
 ├─ backend/
 ├─ database/
 ├─ docker/
+├─ frontend/
+├─ scripts/
 ├─ screenshots/
 └─ README.md
-📸 Step-by-Step Screenshots
-Click a screenshot to view full-size:
+Each folder mirrors a real multi-tier app component (frontend, backend, DB, automation, and infra).
 
-<p align="center"> <a href="screenshots/Multi_01_cloned.png"><img src="screenshots/Multi_01_cloned.png" alt="Step 1" width="400"/></a> <a href="screenshots/Multi_02_CLI_configured.png"><img src="screenshots/Multi_02_CLI_configured.png" alt="Step 2" width="400"/></a> <a href="screenshots/Multi_03_IAM_Role_Creation_Complete.png"><img src="screenshots/Multi_03_IAM_Role_Creation_Complete.png" alt="Step 3" width="400"/></a> <a href="screenshots/Multi_04_EC2_Instance_List.png"><img src="screenshots/Multi_04_EC2_Instance_List.png" alt="Step 4" width="400"/></a> <a href="screenshots/Multi_05_EC2_Instance_Details.png"><img src="screenshots/Multi_05_EC2_Instance_Details.png" alt="Step 5" width="400"/></a> <a href="screenshots/Multi_06_Security_Group_Rules.png"><img src="screenshots/Multi_06_Security_Group_Rules.png" alt="Step 6" width="400"/></a> <a href="screenshots/Multi_07_SSH_Key_Generated.png"><img src="screenshots/Multi_07_SSH_Key_Generated.png" alt="Step 7" width="400"/></a> <a href="screenshots/Multi_08_-Frontend-Role.png"><img src="screenshots/Multi_08_-Frontend-Role.png" alt="Step 8" width="400"/></a> <a href="screenshots/Multi_09_Ec2_Running.png"><img src="screenshots/Multi_09_Ec2_Running.png" alt="Step 9" width="400"/></a> <a href="screenshots/Multi_10_Repo_Cloned.png"><img src="screenshots/Multi_10_Repo_Cloned.png" alt="Step 10" width="400"/></a> <a href="screenshots/Multi_14_Apache_Start_Enable.png"><img src="screenshots/Multi_14_Apache_Start_Enable.png" alt="Step 11" width="400"/></a> <a href="screenshots/Multi_15_Backend_Directory_Structure.png"><img src="screenshots/Multi_15_Backend_Directory_Structure.png" alt="Step 12" width="400"/></a> <a href="screenshots/Multi_16_Database_Directory_Structure.png"><img src="screenshots/Multi_16_Database_Directory_Structure.png" alt="Step 13" width="400"/></a> <a href="screenshots/Multi_Apache_installed.png"><img src="screenshots/Multi_Apache_installed.png" alt="Step 14" width="400"/></a> <a href="screenshots/Multi_Ec2_details.png"><img src="screenshots/Multi_Ec2_details.png" alt="Step 15" width="400"/></a> <a href="screenshots/Multi_iam_role.png"><img src="screenshots/Multi_iam_role.png" alt="Step 16" width="400"/></a> <a href="screenshots/Multi_screenshot.png"><img src="screenshots/Multi_screenshot.png" alt="Step 17" width="400"/></a> <a href="screenshots/Multi_ssh_confirm.png"><img src="screenshots/Multi_ssh_confirm.png" alt="Step 18" width="400"/></a> <a href="screenshots/Multi_ssh_success.png"><img src="screenshots/Multi_ssh_success.png" alt="Step 19" width="400"/></a> <a href="screenshots/Multi_system_info.png"><img src="screenshots/Multi_system_info.png" alt="Step 20" width="400"/></a> </p>
+📸 Step-by-Step Screenshots
+Click any screenshot in the repo’s screenshots/ folder to view it full-size.
+
+All 20 steps documented with clean filenames.
+
+Screenshots include:
+
+EC2 setup
+
+IAM role creation
+
+Apache configuration
+
+Backend verification
+
+Database setup
+
+Multi-tier connectivity checks
+
+Error reproduction + fix steps
+
+(If you want, I can auto-generate a clickable gallery block — just say the word.)
+
 ⚡ How to Use
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
+
 cd Multi-Tier-App-Troubleshooting-Playground
-# Open README.md to follow step-by-step screenshots
+
+# Open README.md and follow the screenshot-guided workflow
+This lab is designed to be followed step-by-step, like a Cloud Support ticket escalation scenario.
+
+🧩 What You’ll Learn
+How multi-tier architectures break
+
+How to troubleshoot like a real CloudOps engineer
+
+Linux logs, systemd services, firewall/SELinux issues
+
+AWS permissions, EC2 networking, ELB, routing
+
+How to document an incident the right way
+
+How to recreate common customer issues
+
+This repo is interview-ready, LinkedIn-ready, and perfect portfolio proof of hands-on troubleshooting skill.
+
 📬 Contact
-You can reach me professionally here:
-
 GitHub: https://github.com/charles-bucher
-
 LinkedIn: https://www.linkedin.com/in/charles-bucher-cloud
+Email: 
 
-Email: Quietopscb@gmail.com
+🧵 About This Lab
+This project simulates real-world CloudOps scenarios across:
+
+EC2
+
+VPC routing
+
+Load Balancers
+
+Apache
+
+IAM
+
+CloudWatch monitoring
+
+Database connectivity
+
+Dockerized components
+
+You’ll deploy, break, debug, fix, repeat — just like the job.
+
+📝 License
+MIT — use it, fork it, break it, rebuild it.
+

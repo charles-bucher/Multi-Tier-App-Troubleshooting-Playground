@@ -8,53 +8,51 @@ Multi-Tier App Troubleshooting Playground 🛠️
 
 🔹 Module Status
 Module	Status
-Backend	
+EC2 / SSH	
+Backend / Apache	
 Database	
-Docker	
-🔹 Screenshots Walkthrough (Embedded)
-<div style="display:flex; flex-wrap: wrap; gap: 10px;"> <img src="screenshots/backend-setup.png" alt="Backend Setup" width="300px" /> <img src="screenshots/db-error.png" alt="Database Error" width="300px" /> <img src="screenshots/docker-compose.png" alt="Docker Environment" width="300px" /> <img src="screenshots/troubleshoot-logs.png" alt="Logs Analysis" width="300px" /> <img src="screenshots/fix-applied.png" alt="Fix Applied" width="300px" /> </div>
-All screenshots are in the screenshots/ folder. Hover and click to view full-size on GitHub.
+Repo Setup	
+🔹 Screenshots Gallery
+<table> <tr> <td><img src="screenshots/Multi_09_Ec2_Running.png" width="250px" /><br>EC2 Running</td> <td><img src="screenshots/Multi_10_Repo_Cloned.png" width="250px" /><br>Repo Cloned</td> <td><img src="screenshots/Multi_14_Apache_Start_Enable.png" width="250px" /><br>Apache Start & Enable</td> </tr> <tr> <td><img src="screenshots/Multi_15_Backend_Directory_Structure.png" width="250px" /><br>Backend Directory</td> <td><img src="screenshots/Multi_16_Database_Directory_Structure.png" width="250px" /><br>Database Directory</td> <td><img src="screenshots/Multi_Apache_installed.png" width="250px" /><br>Apache Installed</td> </tr> <tr> <td><img src="screenshots/Multi_Ec2_details.png" width="250px" /><br>EC2 Details</td> <td><img src="screenshots/Multi_iam_role.png" width="250px" /><br>IAM Role</td> <td><img src="screenshots/Multi_screenshot.png" width="250px" /><br>Screenshot</td> </tr> <tr> <td><img src="screenshots/Multi_ssh_confirm.png" width="250px" /><br>SSH Confirm</td> <td><img src="screenshots/Multi_ssh_success.png" width="250px" /><br>SSH Success</td> <td><img src="screenshots/Multi_system_info.png" width="250px" /><br>System Info</td> </tr> </table>
+All screenshots are stored in the screenshots/ folder. Click to open full-size on GitHub.
 
 🛠️ Folder Structure
 Multi-Tier-App-Troubleshooting-Playground/
-│
-├─ backend/      # Node.js backend with intentional config issues
-├─ database/     # MySQL/PostgreSQL layer for debugging
-├─ docker/       # Docker-compose multi-tier simulation
-├─ screenshots/  # Visual walkthrough images
+├─ backend/
+├─ database/
+├─ docker/
+├─ screenshots/
 └─ README.md
 ⚡ How to Use
 Clone the repo:
 
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
 cd Multi-Tier-App-Troubleshooting-Playground
-Start Docker:
+Start Docker (if needed):
 
 docker-compose up
-Intentionally break services to simulate errors.
+Use SSH/EC2 as shown in screenshots.
 
-Inspect logs in backend/logs and database/logs.
+Break/fix services to practice troubleshooting.
 
-Apply fixes and confirm via the screenshot workflow.
+Inspect logs and confirm changes visually using the gallery.
 
 ✅ What You Gain
-Hands-on AWS CloudOps experience
+Hands-on AWS CloudOps and NOC skills
 
-Multi-tier application debugging
-
-Docker and database troubleshooting skills
+Multi-tier application troubleshooting experience
 
 Portfolio-ready project for LinkedIn/GitHub
 
 💡 Honest Advice
 Expect failures — that’s how you learn.
 
-Logs often mislead — think like a detective.
+Logs may mislead — think like a detective.
 
 Break it intentionally to truly master troubleshooting.
 
 🔗 Links
 GitHub Repo
 
-All screenshots are in the screenshots/ folder
+Screenshots are in the screenshots/ folder
 

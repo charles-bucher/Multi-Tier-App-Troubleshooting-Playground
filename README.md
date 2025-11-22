@@ -1,125 +1,128 @@
 # Multi-Tier App Troubleshooting Playground
 
-**Hands-On Cloud Operations & Troubleshooting Lab**
+![Repo Badge](https://img.shields.io/badge/CloudOps-Hands-On-blue) ![Repo Badge](https://img.shields.io/badge/AWS-Terraform%20Automation-orange)
+
+This repository demonstrates hands-on cloud support and operational troubleshooting skills by deploying, testing, and tearing down a multi-tier application in AWS. It includes automated provisioning, EC2 setup, IAM roles, and incident resolution scenarios.  
+
+The goal is to showcase practical cloud support experience: identifying issues, resolving them, and documenting the process for reliability and maintainability.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)  
+- [Architecture](#architecture)  
+- [Walkthrough](#walkthrough)  
+- [Screenshots](#screenshots)  
+- [Incident / Troubleshooting Scenarios](#incident--troubleshooting-scenarios)  
+- [About the Author](#about-the-author)
 
 ---
 
 ## Overview
 
-This repository is a hands-on playground for multi-tier application troubleshooting in cloud environments. It simulates real-world operational scenarios across compute, networking, and database layers, focusing on monitoring, incident response, automation, and recovery.
+This project simulates a typical multi-tier AWS environment, including:  
 
-> **Note:** All environments were built, tested, documented with screenshots and GIFs, and then safely torn down.
+- **Frontend** web server  
+- **Backend** application layer  
+- **Database** layer  
+- **IAM roles** and security policies  
+- **SSH access** and operational validation  
 
----
+The repo demonstrates the ability to:  
 
-## Key Features
-
-- **Multi-Tier Architecture:** Frontend, backend, and database layers deployed via Terraform.
-- **Cloud Monitoring & Alerts:** CloudWatch metrics, alarms, and logs capture operational data.
-- **Automation & IaC:** Terraform scripts automate deployment and teardown.
-- **Incident Response Scenarios:** Simulated failures with screenshots, metrics, and logs.
-- **Rollback & Recovery:** Demonstrates restoring services after misconfigurations or failures.
-
----
-
-## Lab Scenarios
-
-### 1. EC2 Instance Failure & Recovery
-- **Problem:** Backend EC2 instance stopped responding.
-- **Detection:** CloudWatch alarm triggered due to high CPU utilization.
-- **Action:** Recreated instance and validated connectivity.
-- **Outcome:** Service restored; incident documented.
-
-**Metrics Dashboard:**  
-![EC2 Metrics Screenshot](screenshots/ec2-metrics.png)
-
-**Recovery Process GIF:**  
-![EC2 Recovery GIF](screenshots/ec2-recovery.gif)
+- Provision resources using Terraform  
+- Manage AWS configurations and CLI  
+- Validate system and application health  
+- Troubleshoot and recover from common failures  
 
 ---
 
-### 2. Load Balancer Misconfiguration
-- **Problem:** Intermittent web request failures.
-- **Detection:** ELB logs highlighted routing errors.
-- **Action:** Applied Terraform rollback to previous stable configuration.
-- **Outcome:** Requests successfully routed; downtime minimized.
+## Architecture
 
-**ELB Logs Screenshot:**  
-![ELB Routing Screenshot](screenshots/elb-routing.png)
+![Architecture Overview](docs/screenshots/Multi_screenshot.png)
 
-**Traffic Before/After Chart:**  
-![Traffic Chart](screenshots/elb-traffic.png)
+- EC2 instances for frontend and backend  
+- Security groups configured per tier  
+- IAM roles for access control  
+- SSH keys generated for secure access  
 
 ---
 
-### 3. Database Connection Issue
-- **Problem:** Backend unable to connect to RDS.
-- **Detection:** CloudWatch and application logs captured connection timeouts.
-- **Action:** Adjusted security groups and restarted services.
-- **Outcome:** Connection restored; incident documented for future reference.
+## Walkthrough
 
-**Database Logs Screenshot:**  
-![Database Logs](screenshots/db-logs.png)
+1. **Clone the repository**
 
-**Connection Recovery Metrics:**  
-![DB Recovery Metrics](screenshots/db-metrics.png)
+![01 Cloned Repository](docs/screenshots/Multi_01_cloned.png)
+
+2. **Configure AWS CLI**
+
+![02 CLI Configured](docs/screenshots/Multi_02_CLI_configured.png)
+
+3. **Provision IAM roles**
+
+![03 IAM Role Created](docs/screenshots/Multi_03_IAM_Role_Creation_Complete.png)
+
+4. **Deploy EC2 instances**
+
+![04 EC2 Instance List](docs/screenshots/Multi_04_EC2_Instance_List.png)  
+![05 EC2 Instance Details](docs/screenshots/Multi_05_EC2_Instance_Details.png)
+
+5. **Verify Security Groups**
+
+![06 Security Group Rules](docs/screenshots/Multi_06_Security_Group_Rules.png)
+
+6. **Generate SSH keys and connect**
+
+![07 SSH Key Generated](docs/screenshots/Multi_07_SSH_Key_Generated.png)  
+![08 Frontend Role](docs/screenshots/Multi_08_-Frontend-Role.png)  
+![09 EC2 Running](docs/screenshots/Multi_09_Ec2_Running.png)  
+![10 Repo Cloned](docs/screenshots/Multi_10_Repo_Cloned.png)
+
+7. **Install and configure Apache**
+
+![14 Apache Start/Enable](docs/screenshots/Multi_14_Apache_Start_Enable.png)  
+![Multi Apache Installed](docs/screenshots/Multi_Apache_installed.png)
+
+8. **Backend & Database structure validation**
+
+![15 Backend Directory Structure](docs/screenshots/Multi_15_Backend_Directory_Structure.png)  
+![16 Database Directory Structure](docs/screenshots/Multi_16_Database_Directory_Structure.png)
+
+9. **SSH validation and system info**
+
+![SSH Confirm](docs/screenshots/Multi_ssh_confirm.png)  
+![SSH Success](docs/screenshots/Multi_ssh_success.png)  
+![System Info](docs/screenshots/Multi_system_info.png)  
 
 ---
 
-## Tools & Technologies
+## Incident / Troubleshooting Scenarios
 
-- **AWS Services:** EC2, RDS, VPC, ELB, CloudWatch, Lambda, IAM  
-- **Automation & IaC:** Terraform, Python scripting  
-- **Monitoring & Logging:** CloudWatch metrics, alarms, logs, dashboards  
-- **Operational Practices:** Version-controlled infrastructure, rollback procedures, incident documentation  
+This repo includes practical operational scenarios:  
+
+- EC2 instance failure detection  
+- Security group misconfiguration remediation  
+- IAM role assignment troubleshooting  
+- SSH connection issues  
+
+> Each scenario is resolved by applying standard cloud support practices: investigating logs, validating system state, and applying corrective actions.
 
 ---
 
 ## About the Author
 
-I focus on **hands-on cloud support and operations**. This repository demonstrates my process of building, testing, documenting, and safely tearing down cloud environments. My goal is to develop operational expertise in troubleshooting, monitoring, and automating multi-tier applications.
+I’m transitioning into cloud support and NOC/CloudOps roles, focusing on AWS and automation with Python/Terraform. I build hands-on projects like this to practice:  
+
+- Incident response  
+- Monitoring & alerting  
+- Resource provisioning & teardown  
+- Cost optimization and SRE best practices  
+
+This repo is a snapshot of the kind of real-world cloud support work I can handle.
 
 ---
 
-## How to Explore
+## License
 
-1. Clone the repository:
-```bash
-git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
-Browse lab folders: frontend/, backend/, database/ to explore Terraform scripts, Python automation, and logs.
-
-Check the screenshots/ folder for visual documentation of incidents and recovery.
-
-Deploy scripts in your own AWS account to explore safely, knowing all environments can be torn down.
-
-Visual Highlights
-CloudWatch Metrics Dashboard:
-
-Lambda Automated Recovery Flow:
-
-ELB Routing & Rollback:
-
-Learnings & Takeaways
-Proactive monitoring prevents escalation of failures.
-
-Infrastructure as Code enables safe deployment and teardown.
-
-Logs and metrics are essential for root cause analysis.
-
-Automation reduces human error and accelerates incident resolution.
-
-Simulated failures strengthen operational problem-solving skills.
-
-yaml
-Copy code
-
----
-
-### ✅ How this README works
-1. **Screenshots & GIFs inline:** Makes your repo interactive for recruiters/employers.  
-2. **Before/After metrics placeholders:** Shows measurable results from recovery actions.  
-3. **Honest description:** Clearly states the environments were built, tested, documented, and torn down.  
-4. **Keywords for cloud support roles:** CloudWatch, Terraform, rollback, incident response, monitoring, automation.  
-5. **Polished visual flow:** Organized scenario-based storytelling that demonstrates operational skill.
-
--
+MIT License

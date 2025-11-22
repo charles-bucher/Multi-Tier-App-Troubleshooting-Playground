@@ -1,6 +1,9 @@
 # Multi-Tier App Troubleshooting Playground
 
-![Repo Badge](https://img.shields.io/badge/CloudOps-Hands-On-blue) ![Repo Badge](https://img.shields.io/badge/AWS-Terraform%20Automation-orange)
+![AWS](https://img.shields.io/badge/AWS-Cloud-232F3E?logo=amazon-aws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-Infrastructure-blue?logo=terraform&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Programming-blue?logo=python&logoColor=white)
+![CloudOps](https://img.shields.io/badge/CloudOps-Hands-On-green)
 
 This repository demonstrates hands-on cloud support and operational troubleshooting skills by deploying, testing, and tearing down a multi-tier application in AWS. It includes automated provisioning, EC2 setup, IAM roles, and incident resolution scenarios.  
 

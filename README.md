@@ -1,4 +1,4 @@
-﻿# Multi-Tier App Troubleshooting Playground
+# Multi-Tier App Troubleshooting Playground
 
 [![AWS](https://img.shields.io/badge/AWS-Cloud-orange)](https://aws.amazon.com)
 [![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4)](https://terraform.io)
@@ -6,15 +6,15 @@
 
 > **Learning lab demonstrating cloud support troubleshooting skills** through documented AWS architecture scenarios. Deploy on-demand for practice, tear down when done.
 
-## 🎯 Purpose
+## ?? Purpose
 
 This is a **hands-on learning environment** that demonstrates my cloud support capabilities through:
 
-- ✅ **Real troubleshooting scenarios** with step-by-step solutions
-- ✅ **Multi-tier architecture** design and implementation
-- ✅ **Infrastructure as Code** for reproducible deployments
-- ✅ **Security best practices** documentation
-- ✅ **Systematic incident response** methodology
+- ? **Real troubleshooting scenarios** with step-by-step solutions
+- ? **Multi-tier architecture** design and implementation
+- ? **Infrastructure as Code** for reproducible deployments
+- ? **Security best practices** documentation
+- ? **Systematic incident response** methodology
 
 **Note:** This is a *learning lab*, not a live production system. Deploy when needed for practice/demonstration, then tear down to avoid costs.
 
@@ -23,7 +23,7 @@ This is a **hands-on learning environment** that demonstrates my cloud support c
 ---
 ---
 
-## 📚 Documentation
+## ?? Documentation
 
 - **[Troubleshooting Scenarios](docs/TROUBLESHOOTING_SCENARIOS.md)** - 5 real incident response examples
 - **[Architecture Guide](docs/ARCHITECTURE.md)** - System design and network flow
@@ -32,7 +32,7 @@ This is a **hands-on learning environment** that demonstrates my cloud support c
 
 ---
 
-## 🚀 Quick Start
+## ?? Quick Start
 ```powershell
 # Clone repo
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
@@ -53,7 +53,7 @@ Full instructions: [docs/QUICK_START.md](docs/QUICK_START.md)
 
 ---
 
-## 🛡️ Architecture
+## ??? Architecture
 ```
 Internet
    |
@@ -73,7 +73,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
-## 🔧 Real Troubleshooting Scenarios
+## ?? Real Troubleshooting Scenarios
 
 ### Scenario 1: Website Down (8 min)
 **Problem:** Connection timeout  
@@ -104,7 +104,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
-## 💼 Skills Demonstrated
+## ?? Skills Demonstrated
 
 ### Technical
 - EC2 instance management
@@ -126,7 +126,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
-## 📊 Project Stats
+## ?? Project Stats
 
 | Metric | Value |
 |--------|-------|
@@ -139,7 +139,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
-## 🎓 Learning Outcomes
+## ?? Learning Outcomes
 
 After deploying this project, you'll understand:
 
@@ -153,25 +153,25 @@ After deploying this project, you'll understand:
 
 ---
 
-## 🗂️ Repository Structure
+## ??? Repository Structure
 ```
 Multi-Tier-App-Troubleshooting-Playground/
-├── docs/
-│   ├── TROUBLESHOOTING_SCENARIOS.md  # 5 real incidents
-│   ├── ARCHITECTURE.md               # System design
-│   ├── QUICK_START.md                # Setup guide
-│   └── SKILLS_SUMMARY.md             # Skills inventory
-├── frontend/                         # Apache web server
-├── backend/                          # Application server
-├── database/                         # Database tier
-├── screenshots/                      # Visual documentation
-├── main.tf                          # Terraform configuration
-└── README.md                        # This file
++-- docs/
+�   +-- TROUBLESHOOTING_SCENARIOS.md  # 5 real incidents
+�   +-- ARCHITECTURE.md               # System design
+�   +-- QUICK_START.md                # Setup guide
+�   +-- SKILLS_SUMMARY.md             # Skills inventory
++-- frontend/                         # Apache web server
++-- backend/                          # Application server
++-- database/                         # Database tier
++-- screenshots/                      # Visual documentation
++-- main.tf                          # Terraform configuration
++-- README.md                        # This file
 ```
 
 ---
 
-## 🔗 Related Projects
+## ?? Related Projects
 
 - [aws_monitoring_observability](https://github.com/charles-bucher/aws_monitoring_observability) - CloudWatch monitoring
 - [cloudOps-guardDuty-automation](https://github.com/charles-bucher/cloudOps-guardDuty-automation) - Security automation
@@ -179,20 +179,20 @@ Multi-Tier-App-Troubleshooting-Playground/
 
 ---
 
-## 📞 About
+## ?? About
 
 **Charles Bucher**  
 Cloud Support Engineer (Seeking Remote Roles)
 
-- 🌐 Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)
-- 💼 LinkedIn: [Charles Bucher](https://www.linkedin.com/in/charles-bucher)
-- 📧 Email: quietopscb@gmail.com
+- ?? Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)
+- ?? LinkedIn: [Charles Bucher](https://www.linkedin.com/in/charles-bucher)
+- ?? Email: quietopscb@gmail.com
 
 **Open to:** Cloud Support Engineer, CloudOps, Technical Support roles (remote)
 
 ---
 
-## 📄 License
+## ?? License
 
 MIT License - See [LICENSE](LICENSE) for details
 
@@ -200,9 +200,33 @@ MIT License - See [LICENSE](LICENSE) for details
 
 <div align="center">
 
-**⭐ If this helped you learn cloud support skills, please star the repo!**
+**? If this helped you learn cloud support skills, please star the repo!**
 
-Built with ☁️ for cloud support portfolios
+Built with ?? for cloud support portfolios
 
 </div>
+
+
+## Screenshots
+- ![img](screenshots/01-img.png) $label$
+- ![img](screenshots/02-img.png) $label$
+- ![img](screenshots/03-img.png) $label$
+- ![img](screenshots/04-img.png) $label$
+- ![img](screenshots/05-img.png) $label$
+- ![img](screenshots/06-img.png) $label$
+- ![img](screenshots/07-img.png) $label$
+- ![img](screenshots/08-img.png) $label$
+- ![img](screenshots/09-img.png) $label$
+- ![img](screenshots/10-img.png) $label$
+- ![img](screenshots/11-img.png) $label$
+- ![img](screenshots/12-img.png) $label$
+- ![img](screenshots/13-img.png) $label$
+- ![img](screenshots/14-img.png) $label$
+- ![img](screenshots/15-img.png) $label$
+- ![img](screenshots/16-img.png) $label$
+- ![img](screenshots/17-img.png) $label$
+- ![img](screenshots/18-img.png) $label$
+- ![img](screenshots/19-img.png) $label$
+- ![img](screenshots/20-img.png) $label$
+- ![img](screenshots/21-img.png) $label$
 

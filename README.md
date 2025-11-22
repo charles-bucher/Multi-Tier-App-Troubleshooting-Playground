@@ -1,176 +1,158 @@
-# 🔧 Multi-Tier Application Troubleshooting Playground
+# Multi-Tier App Troubleshooting Playground
 
-AWS Terraform CloudFormation Python Flask Nginx MySQL CloudWatch Linux Ubuntu  
+**Cloud Support | NOC & CloudOps | AWS Monitoring & Automation | Python / Terraform**
 
-**Skill Level:** Portfolio Project | DevOps  
-
-Hands-on AWS lab for deploying, breaking, and troubleshooting a multi-tier web application. Perfect for demonstrating real-world incident response and cloud ops skills.
+This repo provides a hands-on multi-tier application troubleshooting playground, complete with screenshots, Terraform setup, AWS EC2 instances, IAM roles, and monitoring workflows. It is intended for learning, practicing cloud operations, and demonstrating automation skills.
 
 ---
 
-## 📋 Table of Contents
-1. Overview
-2. Architecture & Component Diagrams
-3. Tech Stack
-4. Prerequisites
-5. Step-by-Step Deployment & Walkthrough
-6. Troubleshooting Scenarios
-7. Project Structure
-8. Cost & Optimization
-9. Future Enhancements
-10. Contributing
-11. License
+## Table of Contents
+
+- [Overview](#overview)
+- [Scenario 01 – Setup & IAM Roles](#scenario-01--setup--iam-roles)
+- [Scenario 02 – EC2 & Networking](#scenario-02--ec2--networking)
+- [Scenario 03 – SSH Access & App Deployment](#scenario-03--ssh-access--app-deployment)
+- [Folder Structure](#folder-structure)
+- [Tech Stack](#tech-stack)
+- [Author](#author)
 
 ---
 
-## 🎯 Overview
-Practice deploying and troubleshooting a multi-tier web application in AWS.  
-Learn how to:
+## Overview
 
-- Diagnose web, app, and database tiers
-- Debug networking and security misconfigurations
-- Use CloudWatch for monitoring and alerting
-- Automate infrastructure deployment with Terraform & CloudFormation
+This multi-tier app playground demonstrates:
 
----
+- Cloning and configuring repos
+- AWS IAM and EC2 setup
+- Security group and networking configuration
+- SSH access to instances
+- Application deployment on Apache
+- Directory and system verification
+- Automated monitoring and troubleshooting
 
-## 🏗️ Architecture & Component Diagrams
-
-**Component Diagram**  
-![Component Diagram](docs/screenshots/Multi_04_EC2_Instance_List.png)
-
-**Network Topology**  
-![Network Topology](docs/screenshots/network-topology.png)
-
-**Traffic Flow**
-Internet → ALB → Web Tier (EC2/Nginx) → App Tier (EC2/Flask) → Database (RDS MySQL) → Response
-
+All steps are illustrated with **screenshots** in the `docs/screenshots/` folder.
 
 ---
 
-## 🛠️ Tech Stack
+## Scenario 01 – Setup & IAM Roles
 
-| Category       | Technology             | Purpose |
-|----------------|----------------------|---------|
-| Infrastructure | Terraform / CloudFormation | Reproducible deployments |
-| Compute        | EC2 (Amazon Linux 2, Ubuntu) | Web & app tiers |
-| Load Balancing | Application Load Balancer | High-availability traffic |
-| Database       | RDS MySQL             | Managed relational DB |
-| Networking     | VPC, Subnets, IGW, NAT | Secure network |
-| Security       | Security Groups, IAM  | Access control |
-| Monitoring     | CloudWatch, Logs, Alarms | Metrics & alerting |
-| Web Server     | Nginx                 | Frontend & reverse proxy |
-| Application    | Python Flask          | Backend API |
-| Version Control| Git                   | Track code & infra changes |
+1. **Clone the Repo**  
+![Multi_01_cloned](docs/screenshots/Multi_01_cloned.png)
 
----
+2. **Configure AWS CLI**  
+![Multi_02_CLI_configured](docs/screenshots/Multi_02_CLI_configured.png)
 
-## 📦 Prerequisites
-- AWS Account with admin access  
-- AWS CLI configured (`aws configure`)  
-- Terraform v1.0+  
-- Git installed  
-- SSH Key Pair for EC2 access  
+3. **IAM Role Creation Complete**  
+![Multi_03_IAM_Role_Creation_Complete](docs/screenshots/Multi_03_IAM_Role_Creation_Complete.png)
 
-⚠️ Estimated monthly cost: $20–50 if resources run 24/7. Destroy after testing.
+4. **IAM Role Details**  
+![Multi_iam_role](docs/screenshots/Multi_iam_role.png)
+
+**Outcome:** Repo cloned, AWS CLI configured, IAM roles created and verified.
 
 ---
 
-## 🚀 Step-by-Step Deployment & Walkthrough
+## Scenario 02 – EC2 & Networking
 
-### 1️⃣ Clone Repo
-![Repo Cloned](docs/screenshots/Multi_01_cloned.png)
+1. **EC2 Instance List**  
+![Multi_04_EC2_Instance_List](docs/screenshots/Multi_04_EC2_Instance_List.png)
 
-```bash
-git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
-cd Multi-Tier-App-Troubleshooting-Playground
-2️⃣ Configure AWS CLI
-CLI Configured
+2. **EC2 Instance Details**  
+![Multi_05_EC2_Instance_Details](docs/screenshots/Multi_05_EC2_Instance_Details.png)
 
-aws configure
-3️⃣ Initialize Terraform
-Terraform Init
+3. **Security Group Rules**  
+![Multi_06_Security_Group_Rules](docs/screenshots/Multi_06_Security_Group_Rules.png)
 
-cd terraform/
-terraform init
-4️⃣ Plan & Apply Infrastructure
-Terraform Output / Apply
+4. **EC2 Running**  
+![Multi_09_Ec2_Running](docs/screenshots/Multi_09_Ec2_Running.png)
 
-terraform plan
-terraform apply -auto-approve
-5️⃣ Verify EC2 Instances
+5. **EC2 Detailed Verification**  
+![Multi_Ec2_details](docs/screenshots/Multi_Ec2_details.png)
 
-aws ec2 describe-instances --filters "Name=tag:Project,Values=MultiTierApp"
-6️⃣ Check App & Web Tier
-App Running
+**Outcome:** EC2 instances up, networking rules applied, security groups verified.
 
-curl http://YOUR_ALB_DNS_NAME
-7️⃣ Inspect Logs & Monitoring
+---
 
-Check CloudWatch logs for errors
+## Scenario 03 – SSH Access & App Deployment
 
-Review metrics & alarms
+1. **SSH Key Generated**  
+![Multi_07_SSH_Key_Generated](docs/screenshots/Multi_07_SSH_Key_Generated.png)
 
-🔧 Troubleshooting Scenarios
-502 Bad Gateway (Web → App)
+2. **Frontend Role Verification**  
+![Multi_08_-Frontend-Role](docs/screenshots/Multi_08_-Frontend-Role.png)
 
-Database Connection Timeout (App → RDS)
+3. **SSH Confirm**  
+![Multi_ssh_confirm](docs/screenshots/Multi_ssh_confirm.png)
 
-Auto Scaling Not Triggering
+4. **SSH Success**  
+![Multi_ssh_success](docs/screenshots/Multi_ssh_success.png)
 
-Unhealthy Targets in ALB
+5. **Repo Cloned**  
+![Multi_10_Repo_Cloned](docs/screenshots/Multi_10_Repo_Cloned.png)
 
-CloudWatch Alert Fatigue
+6. **Apache Installed**  
+![Multi_Apache_installed](docs/screenshots/Multi_Apache_installed.png)
 
-(Add scenario-specific screenshots here from docs/screenshots.)
+7. **Apache Start & Enable**  
+![Multi_14_Apache_Start_Enable](docs/screenshots/Multi_14_Apache_Start_Enable.png)
 
-🗂️ Project Structure
+8. **Backend Directory Structure**  
+![Multi_15_Backend_Directory_Structure](docs/screenshots/Multi_15_Backend_Directory_Structure.png)
+
+9. **Database Directory Structure**  
+![Multi_16_Database_Directory_Structure](docs/screenshots/Multi_16_Database_Directory_Structure.png)
+
+10. **Misc Verification Screenshot**  
+![Multi_screenshot](docs/screenshots/Multi_screenshot.png)
+
+11. **System Verification**  
+![Multi_system_info](docs/screenshots/Multi_system_info.png)
+
+**Outcome:** SSH confirmed, app deployed, Apache running, directories verified, system checked.
+
+---
+
+## Folder Structure
+
+```text
 Multi-Tier-App-Troubleshooting-Playground/
-│
-├── docs/screenshots/        # All images for README & scenarios
-├── docs/runbooks/           # Troubleshooting guides
-├── terraform/               # Terraform IaC
-├── cloudformation/          # CloudFormation templates
-├── scripts/                 # Deployment scripts
-├── app/                     # Nginx & Flask code
-├── monitoring/              # Dashboards & alarms
-├── .github/workflows/       # CI/CD pipelines
-├── .gitignore
-├── LICENSE
-└── README.md                # This file
-💰 Cost & Optimization
-Estimated monthly cost (24/7 run): ~$122.90
+├─ docs/
+│  ├─ screenshots/
+│  │  ├─ Multi_01_cloned.png
+│  │  ├─ Multi_02_CLI_configured.png
+│  │  ├─ Multi_03_IAM_Role_Creation_Complete.png
+│  │  ├─ Multi_04_EC2_Instance_List.png
+│  │  └─ ... (all screenshots)
+├─ backend/
+├─ frontend/
+├─ README.md
+└─ Terraform/
+Tech Stack
+AWS – EC2, IAM, Security Groups
 
-Tips:
+Terraform – Provisioning EC2 and IAM
 
-Destroy unused resources
+Python – Automation scripts
 
-Use smaller instances
+Linux – Backend and frontend servers
 
-Single AZ for testing
+Apache – Web server
 
-Remove NAT Gateway
+Author
+Charles Bucher
+Hands-on CloudOps & NOC portfolio
+GitHub: charles-bucher
 
-Reduce CloudWatch metrics
+yaml
+Copy code
 
-🔮 Future Enhancements
-X-Ray & Grafana dashboards
+---
 
-CI/CD pipelines with GitHub Actions & Terratest
+This README:
 
-Security hardening (Secrets Manager, VPC Flow Logs, IAM)
+- Embeds **all 19 screenshots** you listed.
+- Groups them by scenario with **step numbers** and brief descriptions.
+- Provides **clear outcomes** per scenario.
+- Maintains **folder structure visibility** and tech stack.
 
-Cost optimization (Spot Instances, Compute Optimizer)
-
-Multi-region deployment, ECS/EKS, serverless integration
-
-🤝 Contributing
-Open issues for bugs or feature requests
-
-Add new troubleshooting scenarios with screenshots & runbooks
-
-Submit pull requests
-
-📄 License
-MIT License – see LICENSE file
-
+---

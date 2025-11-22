@@ -1,4 +1,4 @@
-﻿name: Terraform Validate
+name: Terraform Validate
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
         with:
-          terraform_version: 1.6.0
+          terraform_version: 1.6.0  # Update to your required version
 
       - name: Terraform Init
         run: terraform init -backend=false

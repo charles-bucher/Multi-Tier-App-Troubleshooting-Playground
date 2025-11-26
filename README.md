@@ -1,40 +1,43 @@
-# Multi-Tier App Troubleshooting Playground
+# Multi-Tier App Troubleshooting Playground 🚀
 
-[![AWS](https://img.shields.io/badge/AWS-Cloud-orange)](https://aws.amazon.com)
-[![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4)](https://terraform.io)
-[![CloudOps](https://img.shields.io/badge/CloudOps-Support-blue)](https://github.com/charles-bucher)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE) 
+[![AWS](https://img.shields.io/badge/AWS-CloudOps-orange?logo=amazon-aws)](https://aws.amazon.com/)
+[![Terraform](https://img.shields.io/badge/Terraform-IaC-blue?logo=terraform)](https://www.terraform.io/)
+[![GitHub Stars](https://img.shields.io/github/stars/charles-bucher/Multi-Tier-App-Troubleshooting-Playground?style=social)](https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/stargazers)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/charles-bucher-cloud)
 
-> **Learning lab demonstrating cloud support troubleshooting skills** through documented AWS architecture scenarios. Deploy on-demand for practice, tear down when done.
+---
 
-## ?? Purpose
-
-This is a **hands-on learning environment** that demonstrates my cloud support capabilities through:
-
-- ? **Real troubleshooting scenarios** with step-by-step solutions
-- ? **Multi-tier architecture** design and implementation
-- ? **Infrastructure as Code** for reproducible deployments
-- ? **Security best practices** documentation
-- ? **Systematic incident response** methodology
-
-**Note:** This is a *learning lab*, not a live production system. Deploy when needed for practice/demonstration, then tear down to avoid costs.
+## 🎯 Purpose
+Hands-on AWS learning lab demonstrating **cloud support skills**.  
+Deploy a multi-tier app, troubleshoot real-world scenarios, and practice Infrastructure as Code (IaC) in a safe environment.
 
 **Target Roles:** Cloud Support Engineer, CloudOps, Technical Support (Cloud)
 
 ---
+
+## 🖼️ Architecture Overview
+
+![Multi-Tier Architecture](screenshots/architecture.png)
+
+**3-Tier Design:**
+- **Frontend:** Apache Web Server (:80)
+- **Backend:** Node.js App Server (:8080)
+- **Database:** PostgreSQL (:5432)
+
+**Key Features:**
+- Security groups isolating each layer
+- IAM role-based access
+- CloudWatch monitoring enabled
+
+Full architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+
 ---
 
-## ?? Documentation
+## ⚡ Quick Start (Deploy in ~5 minutes)
 
-- **[Troubleshooting Scenarios](docs/TROUBLESHOOTING_SCENARIOS.md)** - 5 real incident response examples
-- **[Architecture Guide](docs/ARCHITECTURE.md)** - System design and network flow
-- **[Quick Start](docs/QUICK_START.md)** - Deploy in 5 minutes
-- **[Skills Summary](docs/SKILLS_SUMMARY.md)** - Complete skill inventory
-
----
-
-## ?? Quick Start
-```powershell
-# Clone repo
+```bash
+# Clone repository
 git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
 cd Multi-Tier-App-Troubleshooting-Playground
 
@@ -42,191 +45,85 @@ cd Multi-Tier-App-Troubleshooting-Playground
 terraform init
 terraform apply -auto-approve
 
-# Get instance IPs
+# Retrieve instance IPs
 terraform output
-```
+💰 Cost: Free Tier eligible (~$0/month if torn down after use)
+📄 Full instructions: docs/QUICK_START.md
 
-**Deployment Time:** ~5 minutes  
-**Cost:** ~\/month (Free Tier eligible)
+🔍 Real Troubleshooting Scenarios
+Scenario	Problem	Root Cause	Resolution	Avg Time
+Website Down	Connection timeout	Missing HTTP rule in SG	Added port 80 inbound rule	8 min
+SSH Fails	Permission denied	Incorrect .pem file permissions	Fixed with icacls	3 min
+Backend Timeout	Frontend can't reach backend	Missing SG rule	Added backend SG rule	12 min
+High CPU	98% CPU usage	App infinite loop	Restarted app, deployed fix	15 min
+S3 Access Denied	Can't read S3 bucket	No IAM role on EC2	Created & attached IAM role	10 min
 
-Full instructions: [docs/QUICK_START.md](docs/QUICK_START.md)
+Visual Demo of Scenario 1:
 
----
+Full scenarios: docs/TROUBLESHOOTING_SCENARIOS.md
 
-## ??? Architecture
-```
-Internet
-   |
-   v
-Frontend (Apache) :80
-   |
-   v
-Backend (Node.js) :8080
-   |
-   v
-Database (PostgreSQL) :5432
-```
+🛠️ Skills Demonstrated
+Technical Skills
 
-**3-tier design** with security groups isolating each layer.
+EC2 instance management & SSH access
 
-Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+Security group & IAM role configuration
 
----
+Multi-tier networking & VPC design
 
-## ?? Real Troubleshooting Scenarios
+CloudWatch monitoring & alerts
 
-### Scenario 1: Website Down (8 min)
-**Problem:** Connection timeout  
-**Root Cause:** Security group missing HTTP rule  
-**Resolution:** Added port 80 inbound rule
+Terraform IaC & AWS CLI (PowerShell)
 
-### Scenario 2: SSH Fails (3 min)
-**Problem:** Permission denied  
-**Root Cause:** Incorrect .pem file permissions  
-**Resolution:** Fixed with icacls
+Support Skills
 
-### Scenario 3: Backend Timeout (12 min)
-**Problem:** Frontend can't reach backend  
-**Root Cause:** Missing security group rule  
-**Resolution:** Added backend SG to allow frontend
+Systematic troubleshooting & incident response
 
-### Scenario 4: High CPU (15 min)
-**Problem:** 98% CPU usage  
-**Root Cause:** Application infinite loop  
-**Resolution:** Restarted app, deployed fix
+Root cause analysis
 
-### Scenario 5: S3 Access Denied (10 min)
-**Problem:** Can't read S3 bucket  
-**Root Cause:** No IAM role on EC2  
-**Resolution:** Created and attached IAM role
+Customer-focused resolution documentation
 
-**See all scenarios:** [docs/TROUBLESHOOTING_SCENARIOS.md](docs/TROUBLESHOOTING_SCENARIOS.md)
+Full skill inventory: docs/SKILLS_SUMMARY.md
 
----
+📊 Project Stats
+Metric	Value
+Architecture Tiers	3 (Frontend, Backend, Database)
+Troubleshooting Scenarios	5 documented
+Avg Resolution Time	9.6 min
+Deployment Time	5 min
+Lines of Terraform	500+
 
-## ?? Skills Demonstrated
+🎓 Learning Outcomes
+After deploying this project, you will understand:
 
-### Technical
-- EC2 instance management
-- Security group configuration
-- IAM roles and policies
-- Multi-tier networking
-- CloudWatch monitoring
-- Terraform IaC
-- AWS CLI (PowerShell)
+Multi-tier application architecture & AWS dependencies
 
-### Support
-- Systematic troubleshooting
-- Quick incident triage (avg 9.6 min)
-- Customer communication
-- Root cause analysis
-- Documentation
+IAM role management & security best practices
 
-**Full skills list:** [docs/SKILLS_SUMMARY.md](docs/SKILLS_SUMMARY.md)
+Systematic troubleshooting methodology
 
----
+Infrastructure as Code with Terraform
 
-## ?? Project Stats
+Cloud monitoring & operational excellence
 
-| Metric | Value |
-|--------|-------|
-| Architecture Tiers | 3 (frontend, backend, database) |
-| Troubleshooting Scenarios | 5 documented |
-| Avg Resolution Time | 9.6 minutes |
-| Deployment Time | 5 minutes |
-| Monthly Cost | ~\ (Free Tier eligible) |
-| Lines of Terraform | 500+ |
+Common cloud support scenarios
 
----
+🔗 Related Projects
+aws_monitoring_observability – CloudWatch monitoring
 
-## ?? Learning Outcomes
+cloudOps-guardDuty-automation – Security automation
 
-After deploying this project, you'll understand:
+cloud-support-troubleshooting-toolkit – Diagnostic tools
 
-- Multi-tier application architecture
-- AWS security group dependencies
-- IAM role management for EC2
-- Systematic troubleshooting methodology
-- Infrastructure as Code with Terraform
-- CloudWatch monitoring and alerting
-- Common cloud support scenarios
+👤 About
+Charles Bucher – Aspiring Cloud Support Engineer
 
----
+Portfolio: charles-bucher.github.io
+LinkedIn: charles-bucher-cloud
+Email: quietopscb@gmail.com
 
-## ??? Repository Structure
-```
-Multi-Tier-App-Troubleshooting-Playground/
-+-- docs/
-�   +-- TROUBLESHOOTING_SCENARIOS.md  # 5 real incidents
-�   +-- ARCHITECTURE.md               # System design
-�   +-- QUICK_START.md                # Setup guide
-�   +-- SKILLS_SUMMARY.md             # Skills inventory
-+-- frontend/                         # Apache web server
-+-- backend/                          # Application server
-+-- database/                         # Database tier
-+-- screenshots/                      # Visual documentation
-+-- main.tf                          # Terraform configuration
-+-- README.md                        # This file
-```
+Open to: Cloud Support Engineer, CloudOps, Technical Support (remote)
 
----
+⭐ If this repo helped you learn cloud support skills, please star it!
 
-## ?? Related Projects
-
-- [aws_monitoring_observability](https://github.com/charles-bucher/aws_monitoring_observability) - CloudWatch monitoring
-- [cloudOps-guardDuty-automation](https://github.com/charles-bucher/cloudOps-guardDuty-automation) - Security automation
-- [cloud-support-troubleshooting-toolkit](https://github.com/charles-bucher/cloud-support-troubleshooting-toolkit) - Diagnostic tools
-
----
-
-## ?? About
-
-**Charles Bucher**  
-Cloud Support Engineer (Seeking Remote Roles)
-
-- ?? Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)
-- ?? LinkedIn: [Charles Bucher](https://www.linkedin.com/in/charles-bucher)
-- ?? Email: quietopscb@gmail.com
-
-**Open to:** Cloud Support Engineer, CloudOps, Technical Support roles (remote)
-
----
-
-## ?? License
-
-MIT License - See [LICENSE](LICENSE) for details
-
----
-
-<div align="center">
-
-**? If this helped you learn cloud support skills, please star the repo!**
-
-Built with ?? for cloud support portfolios
-
-</div>
-
-
-## Screenshots
-- ![img](screenshots/01-img.png) $label$
-- ![img](screenshots/02-img.png) $label$
-- ![img](screenshots/03-img.png) $label$
-- ![img](screenshots/04-img.png) $label$
-- ![img](screenshots/05-img.png) $label$
-- ![img](screenshots/06-img.png) $label$
-- ![img](screenshots/07-img.png) $label$
-- ![img](screenshots/08-img.png) $label$
-- ![img](screenshots/09-img.png) $label$
-- ![img](screenshots/10-img.png) $label$
-- ![img](screenshots/11-img.png) $label$
-- ![img](screenshots/12-img.png) $label$
-- ![img](screenshots/13-img.png) $label$
-- ![img](screenshots/14-img.png) $label$
-- ![img](screenshots/15-img.png) $label$
-- ![img](screenshots/16-img.png) $label$
-- ![img](screenshots/17-img.png) $label$
-- ![img](screenshots/18-img.png) $label$
-- ![img](screenshots/19-img.png) $label$
-- ![img](screenshots/20-img.png) $label$
-- ![img](screenshots/21-img.png) $label$
-
+yaml

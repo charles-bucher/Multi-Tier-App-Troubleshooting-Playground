@@ -21,16 +21,16 @@ Deploy a multi-tier app, troubleshoot real-world scenarios, and practice Infrast
 ![Multi-Tier Architecture](screenshots/architecture.png)
 
 **3-Tier Design:**
-- **Frontend:** Apache Web Server (:80)
-- **Backend:** Node.js App Server (:8080)
+- **Frontend:** Apache Web Server (:80)  
+- **Backend:** Node.js App Server (:8080)  
 - **Database:** PostgreSQL (:5432)
 
 **Key Features:**
-- Security groups isolating each layer
-- IAM role-based access
-- CloudWatch monitoring enabled
+- Security groups isolating each layer  
+- IAM role-based access  
+- CloudWatch monitoring enabled  
 
-Full architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+Full architecture: [ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
@@ -48,7 +48,7 @@ terraform apply -auto-approve
 # Retrieve instance IPs
 terraform output
 💰 Cost: Free Tier eligible (~$0/month if torn down after use)
-📄 Full instructions: docs/QUICK_START.md
+📄 Full instructions: QUICK_START.md
 
 🔍 Real Troubleshooting Scenarios
 Scenario	Problem	Root Cause	Resolution	Avg Time
@@ -60,7 +60,7 @@ S3 Access Denied	Can't read S3 bucket	No IAM role on EC2	Created & attached IAM 
 
 Visual Demo of Scenario 1:
 
-Full scenarios: docs/TROUBLESHOOTING_SCENARIOS.md
+Full scenarios: TROUBLESHOOTING_SCENARIOS.md
 
 🛠️ Skills Demonstrated
 Technical Skills
@@ -83,7 +83,7 @@ Root cause analysis
 
 Customer-focused resolution documentation
 
-Full skill inventory: docs/SKILLS_SUMMARY.md
+Full skill inventory: SKILLS_SUMMARY.md
 
 📊 Project Stats
 Metric	Value
@@ -119,11 +119,14 @@ cloud-support-troubleshooting-toolkit – Diagnostic tools
 Charles Bucher – Aspiring Cloud Support Engineer
 
 Portfolio: charles-bucher.github.io
-LinkedIn: charles-bucher-cloud
+LinkedIn: Charles Bucher
 Email: quietopscb@gmail.com
 
 Open to: Cloud Support Engineer, CloudOps, Technical Support (remote)
 
 ⭐ If this repo helped you learn cloud support skills, please star it!
 
-yaml
+pgsql
+
+
+

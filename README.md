@@ -1,121 +1,141 @@
-🏗️ Multi-Tier App Troubleshooting Playground
+# Multi-Tier App Troubleshooting Playground 🛠️
 
+![GitHub last commit](https://img.shields.io/github/last-commit/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
+![GitHub repo size](https://img.shields.io/github/repo-size/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
+![GitHub issues](https://img.shields.io/github/issues/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
+![GitHub license](https://img.shields.io/github/license/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
 
+---
 
+## 👋 About This Project
 
+Hands-on AWS CloudOps lab for deploying, monitoring, and troubleshooting multi-tier web apps.  
+Focuses on **operational excellence**, **incident response**, and **automation**.
 
+**Key outcomes:**
 
+- Realistic troubleshooting scenarios  
+- Multi-tier infrastructure deployment  
+- Automation & monitoring pipelines  
+- Portfolio-ready demonstrations  
 
+---
 
-👋 About This Project
+## 🏗️ Architecture Diagram
 
-Hands-on AWS CloudOps lab for deploying, monitoring, and troubleshooting multi-tier web applications. This project demonstrates operational excellence, incident response, automation, and portfolio-ready skills.
+![Architecture Diagram](screenshots/Multi_04_Architecture.png)
 
-Key Outcomes:
-✅ Realistic troubleshooting scenarios
-✅ Multi-tier AWS infrastructure deployment
-✅ Automation & monitoring pipelines
-✅ Portfolio-ready demos for recruiters
+**Components:**  
 
-🖼️ Architecture Overview
+- EC2 Instances (Frontend & Backend)  
+- VPC / Subnets  
+- RDS Database  
+- ELB (Load Balancer)  
+- CI/CD & Monitoring Workflows  
 
-Highlights:
+---
 
-EC2 backend & frontend servers
+## 📂 Project Structure
 
-RDS database integration
-
-VPC with subnets & security groups
-
-ELB load balancing
-
-CI/CD automation workflows
-
-📂 Project Structure
 Multi-Tier-App-Troubleshooting-Playground/
-├─ backend/           # Backend services & configs
-├─ frontend/          # Frontend services & configs
-├─ database/          # RDS setup & scripts
-├─ diagrams/          # Architecture & workflow diagrams
-├─ docs/              # Documentation & guides
-├─ screenshots/       # Step-by-step screenshots
-├─ workflows/         # CI/CD pipelines & automation scripts
-├─ main.tf            # Terraform main deployment
-├─ outputs.tf         # Terraform outputs
-├─ variables.tf       # Terraform variables
-├─ LICENSE            # MIT License
-└─ README.md          # Project overview
+├─ backend/
+├─ frontend/
+├─ database/
+├─ diagrams/
+├─ docs/
+├─ screenshots/
+├─ workflows/
+├─ main.tf
+├─ outputs.tf
+├─ variables.tf
+├─ LICENSE
+└─ README.md
 
-📖 Step-by-Step Lab Guide
-1️⃣ Deploy Infrastructure
+yaml
+Copy code
+
+---
+
+## 📖 Step-by-Step Instructions
+
+### 1️⃣ Deploy Infrastructure
+```bash
 terraform init
 terraform plan
 terraform apply
+Outcome: Infrastructure ready for troubleshooting (EC2, RDS, VPC, Subnets, ELB).
 
-
-Deployed Resources: EC2, RDS, VPC, subnets, ELB
-Outcome: Infrastructure ready for troubleshooting
 Screenshot:
 
-
 2️⃣ Test Connectivity & Security
+Verify EC2 SSH, ping, and routing.
 
-Verify SSH access and network routing
+Review Security Groups & IAM roles.
 
-Inspect Security Groups & IAM roles
-Outcome: Confirms proper network & security configuration
+Outcome: Confirms network & security are correctly configured.
+
 Screenshots:
 
 
 3️⃣ Launch Frontend & Backend Apps
+Start app services on EC2 and connect to RDS.
 
-Start application services on EC2
+Outcome: Full multi-tier app operational.
 
-Connect backend to RDS database
-Outcome: Full multi-tier app operational
 Screenshots:
 
 
 4️⃣ Troubleshoot Simulated Failures
-
 EC2 instance failure
 
 Misconfigured IAM roles
 
 RDS downtime
-Tasks: Root cause analysis & remediation
-Outcome: Demonstrates operational troubleshooting & incident response skills
+
+Outcome: Demonstrates troubleshooting & operational thinking.
+
 Screenshots:
 
 
 5️⃣ Automation & Verification
+Run Python scripts or CI/CD workflows to automate deployment and checks.
 
-Execute Python scripts or CI/CD workflows for deployment verification
-Outcome: Shows practical automation & monitoring capabilities
+Outcome: Shows practical automation and monitoring skills.
+
 Screenshots:
 
 
 💻 Skills & Technologies
 Area	Tools & Skills
 Cloud	AWS EC2, VPC, ELB, RDS, IAM, CloudWatch, Lambda
-IaC / Automation	Terraform, CloudFormation, Python Scripting
-Monitoring & Logging	CloudWatch Dashboards, Alerts, Logs, Metrics
-Troubleshooting	Incident simulation, RCA, SLA thinking
+IaC / Automation	Terraform, CloudFormation, Python scripting
+Monitoring & Logging	CloudWatch dashboards, alerts, logs, metrics
+Troubleshooting	Incident simulation, root cause analysis (RCA), SLA thinking
 DevOps	CI/CD workflows, GitHub Actions
-🔥 Learning Outcomes
 
+🔥 Learning Outcomes
 Deploy multi-tier AWS applications
 
 Troubleshoot operational failures & security issues
 
-Automate provisioning and verification
+Automate provisioning & verification
 
 Build monitoring dashboards & alerts
 
-Document workflows for portfolio / recruiter showcase
+Document workflows for portfolios / recruiters
+
+📸 Screenshots
+Multi_01	Multi_02	Multi_03
+
+Multi_04	Multi_05	Multi_06
+
+Multi_07	Multi_08	Multi_09
+
+Multi_10	Multi_11	Multi_12
+
+Continue the same pattern for all remaining screenshots…
 
 📬 Contact
-
 GitHub: charles-bucher
 
 Portfolio: charles-bucher.github.io
@@ -125,6 +145,13 @@ LinkedIn: Charles Bucher
 Email: quietopscb@gmail.com
 
 About:
-AWS CloudOps lab: deploy, monitor, and troubleshoot multi-tier web apps using EC2, VPC, ELB, RDS, Terraform & CloudFormation. Focus on automation, monitoring, and operational excellence.
+Hands-on AWS CloudOps lab: deploy, monitor, and troubleshoot multi-tier web apps using EC2, VPC, Load Balancers, Terraform & CloudFormation. Focused on incident response & operational excellence.
 
-Topics: terraform-cloudformation-ec2-vpc-elb-rds-s3 aws-lambda-api-gateway-event-driven sns-alert-automation operational-troubleshooting aws-cloudops-devops multi-tier-n-tier-cloud-support
+Topics:
+terraform cloudformation ec2 vpc elb rds s3 aws-lambda api-gateway event-driven sns-alert-automation operational-troubleshooting aws-cloudops-devops multi-tier-n-tier-cloud-support
+
+yaml
+Copy code
+
+---
+

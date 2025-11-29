@@ -1,4 +1,4 @@
-Multi-Tier App Troubleshooting Playground 🛠️
+🏗️ Multi-Tier App Troubleshooting Playground
 
 
 
@@ -9,106 +9,98 @@ Multi-Tier App Troubleshooting Playground 🛠️
 
 👋 About This Project
 
-Hands-on AWS CloudOps lab for deploying, monitoring, and troubleshooting multi-tier web apps. Focuses on operational excellence, incident response, and automation.
+Hands-on AWS CloudOps lab for deploying, monitoring, and troubleshooting multi-tier web applications. This project demonstrates operational excellence, incident response, automation, and portfolio-ready skills.
 
-Key outcomes:
+Key Outcomes:
+✅ Realistic troubleshooting scenarios
+✅ Multi-tier AWS infrastructure deployment
+✅ Automation & monitoring pipelines
+✅ Portfolio-ready demos for recruiters
 
-Realistic troubleshooting scenarios
+🖼️ Architecture Overview
 
-Multi-tier infrastructure deployment
+Highlights:
 
-Automation & monitoring pipelines
+EC2 backend & frontend servers
 
-Portfolio-ready demonstrations
+RDS database integration
 
-🏗️ Architecture Diagram
+VPC with subnets & security groups
 
+ELB load balancing
 
-Illustrates EC2 instances, VPC/subnets, RDS, ELB, and automation workflows.
+CI/CD automation workflows
 
 📂 Project Structure
 Multi-Tier-App-Troubleshooting-Playground/
-├─ backend/
-├─ frontend/
-├─ database/
-├─ diagrams/
-├─ docs/
-├─ screenshots/
-├─ workflows/
-├─ main.tf
-├─ outputs.tf
-├─ variables.tf
-├─ LICENSE
-└─ README.md
+├─ backend/           # Backend services & configs
+├─ frontend/          # Frontend services & configs
+├─ database/          # RDS setup & scripts
+├─ diagrams/          # Architecture & workflow diagrams
+├─ docs/              # Documentation & guides
+├─ screenshots/       # Step-by-step screenshots
+├─ workflows/         # CI/CD pipelines & automation scripts
+├─ main.tf            # Terraform main deployment
+├─ outputs.tf         # Terraform outputs
+├─ variables.tf       # Terraform variables
+├─ LICENSE            # MIT License
+└─ README.md          # Project overview
 
-📖 Step-by-Step Instructions
+📖 Step-by-Step Lab Guide
 1️⃣ Deploy Infrastructure
 terraform init
 terraform plan
 terraform apply
 
 
-Deploys EC2, RDS, VPC, subnets, and ELB.
-
-Outcome: Infrastructure ready for troubleshooting.
-
+Deployed Resources: EC2, RDS, VPC, subnets, ELB
+Outcome: Infrastructure ready for troubleshooting
 Screenshot:
 
 
 2️⃣ Test Connectivity & Security
 
-Verify EC2 SSH, ping, and routing.
+Verify SSH access and network routing
 
-Review Security Groups & IAM roles.
-
+Inspect Security Groups & IAM roles
+Outcome: Confirms proper network & security configuration
 Screenshots:
 
-
-
-
-Outcome: Confirms network & security are correctly configured.
 
 3️⃣ Launch Frontend & Backend Apps
 
-Start app services on EC2 and connect to RDS.
+Start application services on EC2
 
+Connect backend to RDS database
+Outcome: Full multi-tier app operational
 Screenshots:
 
-
-
-
-Outcome: Full multi-tier app operational.
 
 4️⃣ Troubleshoot Simulated Failures
 
-Introduce scenarios like EC2 failure, misconfigured IAM, RDS downtime.
+EC2 instance failure
 
-Perform root cause analysis & remediation.
+Misconfigured IAM roles
 
+RDS downtime
+Tasks: Root cause analysis & remediation
+Outcome: Demonstrates operational troubleshooting & incident response skills
 Screenshots:
 
-
-
-
-Outcome: Demonstrates troubleshooting & operational thinking.
 
 5️⃣ Automation & Verification
 
-Run Python scripts or CI/CD workflows to automate deployment and checks.
-
+Execute Python scripts or CI/CD workflows for deployment verification
+Outcome: Shows practical automation & monitoring capabilities
 Screenshots:
 
-
-
-
-Outcome: Shows practical automation and monitoring skills.
 
 💻 Skills & Technologies
 Area	Tools & Skills
 Cloud	AWS EC2, VPC, ELB, RDS, IAM, CloudWatch, Lambda
-IaC / Automation	Terraform, CloudFormation, Python scripting
-Monitoring & Logging	CloudWatch dashboards, alerts, logs, metrics
-Troubleshooting	Incident simulation, root cause analysis (RCA), SLA thinking
+IaC / Automation	Terraform, CloudFormation, Python Scripting
+Monitoring & Logging	CloudWatch Dashboards, Alerts, Logs, Metrics
+Troubleshooting	Incident simulation, RCA, SLA thinking
 DevOps	CI/CD workflows, GitHub Actions
 🔥 Learning Outcomes
 
@@ -116,11 +108,11 @@ Deploy multi-tier AWS applications
 
 Troubleshoot operational failures & security issues
 
-Automate provisioning & verification
+Automate provisioning and verification
 
 Build monitoring dashboards & alerts
 
-Document workflows for portfolios / recruiters
+Document workflows for portfolio / recruiter showcase
 
 📬 Contact
 
@@ -128,7 +120,11 @@ GitHub: charles-bucher
 
 Portfolio: charles-bucher.github.io
 
-LinkedIn: Charles Bucher cloud
+LinkedIn: Charles Bucher
 
 Email: quietopscb@gmail.com
 
+About:
+AWS CloudOps lab: deploy, monitor, and troubleshoot multi-tier web apps using EC2, VPC, ELB, RDS, Terraform & CloudFormation. Focus on automation, monitoring, and operational excellence.
+
+Topics: terraform-cloudformation-ec2-vpc-elb-rds-s3 aws-lambda-api-gateway-event-driven sns-alert-automation operational-troubleshooting aws-cloudops-devops multi-tier-n-tier-cloud-support

@@ -132,3 +132,11 @@ Copy code
 ![](diagrams/Multi-Tier_diagram_2.PNG)
 
 
+
+## ??? Diagrams from diagrams
+
+![](diagrams/Multi-Tier_Diagram.PNG)
+
+![](diagrams/Multi-Tier_diagram_2.PNG)
+
+

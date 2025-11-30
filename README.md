@@ -165,48 +165,4 @@ Multi-Tier-App-Troubleshooting-Playground/
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details
-'@
-
-Write-Host "Updating README with badges and streamlined screenshots..." -ForegroundColor Cyan
-Set-Content -Path "README.md" -Value $readmeContent -Encoding UTF8
-
-Write-Host "Deleting extra screenshots..." -ForegroundColor Cyan
-$screenshotsToDelete = @(
-    "screenshots/Multi_06_Login.png",
-    "screenshots/Multi_07_Dashboard.png",
-    "screenshots/Multi_08_ErrorLogs.png",
-    "screenshots/Multi_10_APIResponse.png",
-    "screenshots/Multi_11_Login.png",
-    "screenshots/Multi_12_Dashboard.png",
-    "screenshots/Multi_13_ErrorLogs.png",
-    "screenshots/Multi_15_APIResponse.png",
-    "screenshots/Multi_16_Login.png",
-    "screenshots/Multi_17_Dashboard.png",
-    "screenshots/Multi_18_ErrorLogs.png",
-    "screenshots/Multi_20_APIResponse.png",
-    "screenshots/Multi_21_Login.png"
-)
-
-foreach ($file in $screenshotsToDelete) {
-    if (Test-Path $file) {
-        Remove-Item $file
-        Write-Host "  Deleted $file" -ForegroundColor Yellow
-    }
-}
-
-Write-Host "Staging all changes..." -ForegroundColor Cyan
-git add .
-
-Write-Host "Committing..." -ForegroundColor Cyan
-git commit -m "Clean README: add badges, streamline to 5 key screenshots"
-
-Write-Host "Pushing to GitHub..." -ForegroundColor Cyan
-git push origin main
-
-Write-Host "`nDone! Your repo now has:" -ForegroundColor Green
-Write-Host "  ✓ Professional badges" -ForegroundColor Green
-Write-Host "  ✓ 2 architecture diagrams" -ForegroundColor Green
-Write-Host "  ✓ 5 workflow screenshots" -ForegroundColor Green
-Write-Host "  ✓ Clean, scannable README" -ForegroundColor Green
-Write-Host "`nCheck it out: https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground" -ForegroundColor Cyan
+MIT License - see [LICENSE](LICENSE) 

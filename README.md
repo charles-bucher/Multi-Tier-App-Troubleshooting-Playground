@@ -1,6 +1,10 @@
-﻿# Multi-Tier App Troubleshooting Playground 
+# Push-README-Update.ps1
+# Updates README.md with corrected image paths and pushes to GitHub
 
-##  About This Project
+$readmeContent = @'
+# Multi-Tier App Troubleshooting Playground 🛠️
+
+## 👋 About This Project
 
 Hands-on AWS lab simulating real-world CloudOps troubleshooting scenarios. Built to practice deploying, monitoring, and fixing multi-tier web applications in a controlled environment before touching production systems.
 
@@ -10,11 +14,11 @@ Hands-on AWS lab simulating real-world CloudOps troubleshooting scenarios. Built
 - Building monitoring pipelines and automated alerts
 - Documenting incident response workflows
 
-This isn't production infrastructureit's a safe training ground for building CloudOps muscle memory.
+This isn't production infrastructure—it's a safe training ground for building CloudOps muscle memory.
 
 ---
 
-##  Architecture
+## 🏗️ Architecture
 
 ![Architecture Diagram](diagrams/Multi-Tier_Diagram.PNG)
 
@@ -35,21 +39,21 @@ This isn't production infrastructureit's a safe training ground for building Clo
 ```
 Multi-Tier-App-Troubleshooting-Playground/
 ├── backend/          # Application tier code and configs
- frontend/         # Web tier code and configs
- database/         # Database initialization scripts
- diagrams/         # Architecture diagrams
- docs/             # Troubleshooting scenarios and playbooks
- screenshots/      # Lab walkthrough screenshots
- workflows/        # CI/CD automation
- main.tf           # Terraform infrastructure deployment
- outputs.tf        # Terraform outputs
- variables.tf      # Terraform configuration variables
- README.md
+├── frontend/         # Web tier code and configs
+├── database/         # Database initialization scripts
+├── diagrams/         # Architecture diagrams
+├── docs/             # Troubleshooting scenarios and playbooks
+├── screenshots/      # Lab walkthrough screenshots
+├── workflows/        # CI/CD automation
+├── main.tf           # Terraform infrastructure deployment
+├── outputs.tf        # Terraform outputs
+├── variables.tf      # Terraform configuration variables
+└── README.md
 ```
 
 ---
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### 1. Deploy Infrastructure
 
@@ -107,7 +111,7 @@ Each scenario includes:
 
 ---
 
-##  Skills Demonstrated
+## 💻 Skills Demonstrated
 
 | Area | Tools & Technologies |
 |------|---------------------|
@@ -120,7 +124,7 @@ Each scenario includes:
 
 ---
 
-##  Learning Outcomes
+## 🎯 Learning Outcomes
 
 - Deploy and configure multi-tier AWS applications
 - Troubleshoot common operational failures (networking, IAM, database connectivity)
@@ -131,34 +135,39 @@ Each scenario includes:
 
 ---
 
-##  Lab Walkthrough
+## 📸 Lab Walkthrough
 
 ### Login & Authentication
 ![Login Interface](screenshots/Multi_01_Login.png)
 ![Secondary Login](screenshots/Multi_06_Login.png)
 ![Login Validation](screenshots/Multi_11_Login.png)
+![Additional Login Test](screenshots/Multi_16_Login.png)
+![Final Login Scenario](screenshots/Multi_21_Login.png)
 
 ### Dashboard & Monitoring
 ![Dashboard Overview](screenshots/Multi_02_Dashboard.png)
 ![Operational Dashboard](screenshots/Multi_07_Dashboard.png)
 ![Monitoring Dashboard](screenshots/Multi_12_Dashboard.png)
+![Extended Dashboard](screenshots/Multi_17_Dashboard.png)
 
 ### Error Logs & Troubleshooting
 ![Error Log Analysis](screenshots/Multi_03_ErrorLogs.png)
 ![Debug Logs](screenshots/Multi_08_ErrorLogs.png)
 ![Incident Logs](screenshots/Multi_13_ErrorLogs.png)
+![Advanced Troubleshooting](screenshots/Multi_18_ErrorLogs.png)
 
 ### API Testing & Responses
 ![API Response Testing](screenshots/Multi_05_APIResponse.png)
 ![API Integration](screenshots/Multi_10_APIResponse.png)
 ![API Validation](screenshots/Multi_15_APIResponse.png)
+![API Performance Testing](screenshots/Multi_20_APIResponse.png)
 
 ### Architecture Documentation
 ![System Architecture](screenshots/Multi_14_Architecture.png)
 
 ---
 
-##  Contact
+## 📬 Contact
 
 **GitHub:** [charles-bucher](https://github.com/charles-bucher)  
 **Portfolio:** [charles-bucher.github.io](https://charles-bucher.github.io)  
@@ -167,10 +176,27 @@ Each scenario includes:
 
 ---
 
-##  License
+## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
 ---
 
 **About:** Hands-on AWS CloudOps lab simulating multi-tier web application deployment, monitoring, and troubleshooting. Focused on incident response, operational excellence, and building real-world cloud support skills in a safe training environment.
+'@
+
+# Write new README content
+Write-Host "Updating README.md with corrected image paths..." -ForegroundColor Cyan
+Set-Content -Path "README.md" -Value $readmeContent -Encoding UTF8
+
+# Git operations
+Write-Host "Staging changes..." -ForegroundColor Cyan
+git add README.md
+
+Write-Host "Committing changes..." -ForegroundColor Cyan
+git commit -m "Fix image paths: uppercase PNG for diagrams, lowercase png for screenshots"
+
+Write-Host "Pushing to GitHub..." -ForegroundColor Cyan
+git push origin main
+
+Write-Host "Done! All images should now display correctly on GitHub." -ForegroundColor Green

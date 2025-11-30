@@ -38,8 +38,6 @@ This isn't production infrastructure—it's a safe training ground for building 
 - **Load Balancing:** ELB distributing traffic across frontend instances
 - **Monitoring:** CloudWatch dashboards, alarms, and logs
 
-![Detailed Architecture](diagrams/Multi-Tier_diagram_2.png)
-
 ---
 
 ## 🚀 Quick Start

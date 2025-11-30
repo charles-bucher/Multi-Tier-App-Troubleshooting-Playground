@@ -20,7 +20,7 @@ This isn't production infrastructure—it's a safe training ground for building 
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](diagrams/Multi-Tier_Diagram.PNG)
+![Architecture Diagram](diagrams/Multi-Tier_Diagram.png)
 
 **Components:**
 - **Frontend:** EC2 instances serving web tier
@@ -30,7 +30,7 @@ This isn't production infrastructure—it's a safe training ground for building 
 - **Load Balancing:** ELB distributing traffic across frontend instances
 - **Monitoring:** CloudWatch dashboards, alarms, and logs
 
-![Detailed Architecture](diagrams/Multi-Tier_diagram_2.PNG)
+![Detailed Architecture](diagrams/Multi-Tier_diagram_2.png)
 
 ---
 

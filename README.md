@@ -1,166 +1,103 @@
-# Update-And-Push-Final-README.ps1
-# Clean README with badges and 5 key screenshots
+Multi-Tier App Troubleshooting Playground 🛠️
 
-$readmeContent = @'
-# Multi-Tier App Troubleshooting Playground 🛠️
+Hands-on AWS lab for deploying, monitoring, and troubleshooting multi-tier web apps.
 
-![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20RDS%20%7C%20VPC-orange?logo=amazon-aws)
-![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform)
-![CloudWatch](https://img.shields.io/badge/Monitoring-CloudWatch-FF9900?logo=amazon-aws)
-![Python](https://img.shields.io/badge/Automation-Python-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+What It Does (5 seconds)
 
----
+Deploys a realistic multi-tier AWS environment: frontend, backend, database.
 
-## 👋 About This Project
+Simulates operational failures for hands-on troubleshooting.
 
-Hands-on AWS lab simulating real-world CloudOps troubleshooting scenarios. Built to practice deploying, monitoring, and fixing multi-tier web applications in a controlled environment before touching production systems.
+Builds monitoring dashboards and automated alerts for real-world practice.
 
-**What this demonstrates:**
-- Deploying multi-tier AWS infrastructure (web, app, database layers)
-- Simulating realistic operational failures and troubleshooting them
-- Building monitoring pipelines and automated alerts
-- Documenting incident response workflows
+Problem It Solves
 
-This isn't production infrastructure—it's a safe training ground for building CloudOps muscle memory.
+Practice incident response, troubleshooting, and root cause analysis without touching production systems.
 
----
+AWS Services & Tech
 
-## 🏗️ Architecture
+EC2, VPC, ELB, RDS, IAM, S3
 
-![Architecture Diagram](diagrams/Multi-Tier_Diagram.png)
+CloudWatch (dashboards, alarms, logs)
 
-**Components:**
-- **Frontend:** EC2 instances serving web tier
-- **Backend:** EC2 instances running application logic
-- **Database:** RDS instance for data persistence
-- **Networking:** VPC with public/private subnets, security groups, routing tables
-- **Load Balancing:** ELB distributing traffic across frontend instances
-- **Monitoring:** CloudWatch dashboards, alarms, and logs
+Lambda, SNS, Python scripting
 
----
+Terraform & CloudFormation
 
-## 🚀 Quick Start
+Skills Demonstrated
 
-### 1. Deploy Infrastructure
+Multi-tier AWS deployment & infrastructure as code
 
-```bash
+Troubleshooting EC2, RDS, IAM, ELB, networking
+
+Monitoring & automated alerting pipelines
+
+Incident response documentation
+
+CI/CD workflows & Python automation
+
+Quick Start
+git clone <repo-url>
+cd Multi-Tier-App-Troubleshooting-Playground
 terraform init
-terraform plan
 terraform apply
-```
 
-**Result:** Full multi-tier environment deployed (EC2, RDS, VPC, subnets, load balancer)
 
-### 2. Verify Connectivity
+Verify connectivity & IAM permissions.
 
-- Test EC2 SSH access and security group rules
-- Confirm routing table configurations
-- Validate IAM role permissions
+Start frontend/backend services & test database access.
 
-**Result:** Baseline operational state confirmed
+Run troubleshooting scenarios:
 
-### 3. Launch Application
+EC2 failure recovery
 
-- Start frontend services on web tier EC2 instances
-- Start backend services on app tier EC2 instances
-- Verify database connectivity from app tier
+IAM permission errors
 
-**Result:** Working multi-tier application
+Database connectivity issues
 
-### 4. Run Troubleshooting Scenarios
+Load balancer health check failures
 
-Simulated failures include:
-- **EC2 instance failure:** Instance stops responding, diagnose and recover
-- **IAM permission errors:** App can't access RDS due to misconfigured roles
-- **Database connection failures:** RDS security groups blocking app tier access
-- **Load balancer health check failures:** ELB marking instances unhealthy
-- **Network routing issues:** Subnet routing tables misconfigured
+Network routing problems
 
-Each scenario includes problem description, symptoms, troubleshooting steps, root cause analysis, and resolution documentation.
+Lab Walkthrough (Screenshots)
 
-**Result:** Hands-on experience diagnosing and fixing real-world AWS issues
+Authentication & Access Control
 
-### 5. Monitoring & Automation
 
-- CloudWatch dashboards tracking key metrics
-- Automated alerts via SNS for threshold breaches
-- CI/CD workflows for infrastructure deployment
-- Python scripts for health checks and validation
+Monitoring Dashboard
 
-**Result:** Operational observability and automation practice
 
----
+Error Logs
 
-## 💻 Skills Demonstrated
 
-| Area | Tools & Technologies |
-|------|---------------------|
-| **Cloud Infrastructure** | AWS EC2, VPC, ELB, RDS, IAM, S3 |
-| **Infrastructure as Code** | Terraform, CloudFormation |
-| **Monitoring & Logging** | CloudWatch (dashboards, alarms, logs, metrics) |
-| **Automation** | Python scripting, Lambda functions, SNS alerts |
-| **Troubleshooting** | Incident simulation, root cause analysis, documentation |
-| **DevOps** | CI/CD workflows, GitHub Actions |
+API Testing & Validation
 
----
 
-## 📸 Lab Walkthrough
+System Architecture
 
-**Authentication & Access Control**  
-![Login Interface](screenshots/Multi_01_Login.png)
 
-**Operational Monitoring Dashboard**  
-![Dashboard Overview](screenshots/Multi_02_Dashboard.png)
+Project Structure
+backend/          # Application tier
+frontend/         # Web tier
+database/         # DB scripts
+diagrams/         # Architecture diagrams
+docs/             # Troubleshooting playbooks
+screenshots/      # Lab walkthrough images
+workflows/        # CI/CD automation
+main.tf           # Terraform deployment
+outputs.tf        # Terraform outputs
+variables.tf      # Config variables
 
-**Error Log Analysis & Debugging**  
-![Error Logs](screenshots/Multi_03_ErrorLogs.png)
+Contact
 
-**API Response Testing & Validation**  
-![API Testing](screenshots/Multi_05_APIResponse.png)
+GitHub: charles-bucher
 
-**System Architecture Documentation**  
-![Architecture](screenshots/Multi_14_Architecture.png)
+Portfolio: charles-bucher.github.io
 
----
+LinkedIn: charles-bucher-cloud
 
-## 🎯 Learning Outcomes
+Email: quietopscb@gmail.com
 
-- Deploy and configure multi-tier AWS applications
-- Troubleshoot operational failures (networking, IAM, database connectivity)
-- Build monitoring dashboards and configure automated alerts
-- Document incident response procedures
-- Practice systematic problem-solving under simulated pressure
+License
 
----
-
-## 📂 Project Structure
-
-```
-Multi-Tier-App-Troubleshooting-Playground/
-├── backend/          # Application tier code and configs
-├── frontend/         # Web tier code and configs
-├── database/         # Database initialization scripts
-├── diagrams/         # Architecture diagrams
-├── docs/             # Troubleshooting scenarios and playbooks
-├── screenshots/      # Lab walkthrough screenshots
-├── workflows/        # CI/CD automation
-├── main.tf           # Terraform infrastructure deployment
-├── outputs.tf        # Terraform outputs
-└── variables.tf      # Terraform configuration variables
-```
-
----
-
-## 📬 Contact
-
-**GitHub:** [charles-bucher](https://github.com/charles-bucher)  
-**Portfolio:** [charles-bucher.github.io](https://charles-bucher.github.io)  
-**LinkedIn:** [linkedin.com/in/charles-bucher-cloud](https://linkedin.com/in/charles-bucher-cloud)  
-**Email:** quietopscb@gmail.com
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) 
+MIT License

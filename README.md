@@ -1,91 +1,87 @@
-# Multi-Tier App Troubleshooting Playground 🛠️
+Multi-Tier App Troubleshooting Playground
+Hands-on AWS CloudOps lab for real troubleshooting, real incidents, and real resume power.
 
-![AWS](https://img.shields.io/badge/AWS-CloudOps-orange) ![Terraform](https://img.shields.io/badge/Terraform-IaC-blue) ![Python](https://img.shields.io/badge/Python-Automation-green)
+(What hiring managers see in 5 seconds: AWS Networking • EC2/App Issues • Multi-Tier debugging • Logs • Monitoring • SG/NACL mistakes • Broken app recovery)
 
-**5-second glance:** Hands-on AWS lab for deploying, monitoring, and troubleshooting multi-tier web applications with EC2, VPC, RDS, ELB, Terraform & CloudFormation. Focus on CloudOps, incident response, and operational excellence.
+📌 System Architecture
+Primary Diagram
 
----
+Shows the entire multi-tier layout: Load Balancer → Frontend → Backend API → Database → VPC networking + routing paths.
 
-## 🚀 Project Overview
+![Primary Diagram](diagrams/Multi-Tier_Diagram.png)
+*High-level view of the full multi-tier system. Demonstrates understanding of VPC design, subnets, routing, load balancing, and service interactions.*
 
-| Feature | What You Learn | Screenshot |
-|---------|----------------|------------|
-| Multi-tier AWS deployment | Deploy Frontend → Backend → Database | ![Login](screenshots/Multi_01_Login.png)<br>**Skill:** Frontend/Backend connectivity |
-| Operational failure simulation | Practice incident response & root cause analysis | ![Error Logs](screenshots/Multi_03_ErrorLogs.png)<br>**Skill:** Troubleshooting EC2, IAM, RDS |
-| Monitoring dashboards & alerts | Build CloudWatch dashboards & automated alerts | ![API Response](screenshots/Multi_05_APIResponse.png)<br>**Skill:** Monitoring & alert pipelines |
-| CI/CD automation | Deploy & update infrastructure with Terraform | - |
+Detailed Diagram
 
----
+Shows traffic flow, SG rules, IAM roles, subnet isolation, and where real troubleshooting happens.
 
-## 🏗 System Architecture
+![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)
+*Deep dive into how traffic and AWS services interact. Shows where failures typically occur and what a Cloud Support engineer checks first.*
 
-### Primary Diagram
-![Primary Diagram](diagrams/Multi-Tier_Diagram.png)  
-*Shows the full multi-tier architecture: Frontend, Backend, Database, Load Balancer, and VPC layout.*
+📸 Key Screenshots (with real skill explanations)
 
-### Alternate / Detailed Diagram
-![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)  
-*Detailed view of network routing, subnets, security groups, and IAM role assignments.*
+Use this format for each screenshot you're adding later:
 
----
+### Login Page Connectivity  
+![Login Test](screenshots/Multi_01_Login.png)  
+*Confirms frontend reachability, EC2 health, SG ingress, and correct interface binding.*
 
-## 🏁 Quick Start
+### Backend API Failure  
+![API Debug](screenshots/Multi_02_API_Failure.png)  
+*Shows how to diagnose backend timeouts, incorrect SG rules, and ALB target group health.*
 
-```bash
-git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
-cd Multi-Tier-App-Troubleshooting-Playground
-terraform init
-terraform apply
-# Verify connectivity & IAM permissions
-# Start frontend/backend services & test database access
-# Run troubleshooting scenarios (see below)
-🛠 Troubleshooting Scenarios
-Scenario	Key Skills	Screenshot
-EC2 Failure Recovery	Identify & fix failed instances	
-IAM Permission Errors	Debug IAM roles/policies	
-Database Connectivity	Resolve RDS & network issues	
-Load Balancer Health Checks	Diagnose & correct failures	
-Network Routing Problems	Troubleshoot VPC & subnet routing	
+### RDS Connectivity Test  
+![DB Check](screenshots/Multi_03_DB_Check.png)  
+*Verifies VPC/subnet routing, NACL rules, and DB SG ingress/egress — core AWS support skills.*
 
-📁 Project Structure
-bash
-Copy code
-backend/      # Application tier
-frontend/     # Web tier
-database/     # DB scripts
-diagrams/     # Architecture diagrams
-docs/         # Troubleshooting playbooks
-screenshots/  # Lab walkthrough images
-workflows/    # CI/CD automation
-main.tf       # Terraform deployment
-outputs.tf    # Terraform outputs
-variables.tf  # Config variables
-💡 Skills Demonstrated
-Multi-tier AWS deployment & IaC (Terraform / CloudFormation)
+### Security Group Misconfiguration  
+![SG Error](screenshots/Multi_04_SG_Error.png)  
+*Classic “works on frontend, breaks on backend” scenario — demonstrates practical debugging.*
 
-Troubleshooting EC2, RDS, IAM, ELB, networking
+### Successful Recovery  
+![Success](screenshots/Multi_05_Success.png)  
+*Final fixed state proving ability to diagnose, fix, validate, and close the incident properly.*
 
-Monitoring & automated alert pipelines
 
-Incident response documentation & playbooks
+Add or remove sections depending on which screenshots you use.
+The captions are the key — they show a hiring manager that you understand why the screenshot matters.
 
-Python scripting & CI/CD automation
+🛠️ Troubleshooting Scenarios (Clean Format)
+1. Frontend loads, but backend is dead
 
-Infrastructure debugging & operational excellence
+Skills shown:
 
-📬 Contact
-GitHub: charles-bucher
+EC2 logs
 
-Portfolio: charles-bucher.github.io
+ALB target health
 
-LinkedIn: charles-bucher-cloud
+Backend SG/NACL issues
 
-Email: quietopscb@gmail.com
+cURL testing
 
-⚖️ License
-MIT License
+CloudWatch Log Insights
 
-yaml
-Copy code
+2. Database unreachable from backend
 
----
+Skills shown:
+
+VPC routing + subnets
+
+RDS SG vs EC2 SG relationships
+
+Telnet/NC connectivity testing
+
+IAM role verification
+
+3. ALB returns 504 timeout
+
+Skills shown:
+
+ASG scaling/draining
+
+ALB health check path debugging
+
+App misconfiguration
+
+Metric-based isolation logic
+

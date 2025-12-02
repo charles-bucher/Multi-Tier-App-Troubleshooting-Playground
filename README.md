@@ -1,20 +1,16 @@
 # Multi-Tier App Troubleshooting Playground 🛠️
 
-[![GitHub stars](https://img.shields.io/github/stars/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)](https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![AWS](https://img.shields.io/badge/AWS-CloudOps-orange)](https://aws.amazon.com)
-
-Hands-on AWS lab to **deploy, monitor, and troubleshoot multi-tier web applications**. Focus: CloudOps, incident response, IaC, and operational excellence.
+Hands-on AWS lab to deploy, monitor, and troubleshoot multi-tier web applications. Focus: CloudOps, incident response, IaC, and operational excellence.
 
 ---
 
 ## 🚀 Project Overview
 
 | Feature | What You Learn | Screenshot |
-|--------|----------------|------------|
-| Multi-tier AWS deployment | Deploy Frontend → Backend → Database | [![Login](screenshots/Multi_01_Login.png)](screenshots/Multi_01_Login.png) |
-| Operational failure simulation | Practice incident response & root cause analysis | [![Error Logs](screenshots/Multi_03_ErrorLogs.png)](screenshots/Multi_03_ErrorLogs.png) |
-| Monitoring dashboards & alerts | Build CloudWatch dashboards & automated alerts | [![API Response](screenshots/Multi_05_APIResponse.png)](screenshots/Multi_05_APIResponse.png) |
+|---------|----------------|-----------|
+| Multi-tier AWS deployment | Deploy Frontend → Backend → Database | ![Login](screenshots/Multi_01_Login.png) |
+| Operational failure simulation | Practice incident response & root cause analysis | ![Error Logs](screenshots/Multi_03_ErrorLogs.png) |
+| Monitoring dashboards & alerts | Build CloudWatch dashboards & automated alerts | ![API Response](screenshots/Multi_05_APIResponse.png) |
 | CI/CD automation | Deploy & update infrastructure with Terraform | - |
 
 ---
@@ -22,10 +18,10 @@ Hands-on AWS lab to **deploy, monitor, and troubleshoot multi-tier web applicati
 ## 🏗 System Architecture
 
 **Primary Diagram:**  
-![Primary Diagram](diagrams/Multi_14_Architecture.png)
+![Primary Diagram](diagrams/Multi-Tier_Diagram.png)
 
 **Alternate / Detailed Diagram:**  
-![Detailed Diagram](diagrams/Multi_14_Architecture.png)
+![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)
 
 ---
 
@@ -51,26 +47,18 @@ Load Balancer Health Checks	Diagnose & correct failures
 Network Routing Problems	Troubleshoot VPC & subnet routing	
 
 📁 Project Structure
-backend/ – Application tier
-
-frontend/ – Web tier
-
-database/ – DB scripts
-
-diagrams/ – Architecture diagrams
-
-docs/ – Troubleshooting playbooks
-
-screenshots/ – Lab walkthrough images
-
-workflows/ – CI/CD automation
-
-main.tf – Terraform deployment
-
-outputs.tf – Terraform outputs
-
-variables.tf – Config variables
-
+bash
+Copy code
+backend/      # Application tier
+frontend/     # Web tier
+database/     # DB scripts
+diagrams/     # Architecture diagrams
+docs/         # Troubleshooting playbooks
+screenshots/  # Lab walkthrough images
+workflows/    # CI/CD automation
+main.tf       # Terraform deployment
+outputs.tf    # Terraform outputs
+variables.tf  # Config variables
 💡 Skills Demonstrated
 Multi-tier AWS deployment & IaC (Terraform / CloudFormation)
 
@@ -95,4 +83,9 @@ Email: quietopscb@gmail.com
 
 ⚖️ License
 MIT License
+
+yaml
+Copy code
+
+---
 

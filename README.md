@@ -1,43 +1,38 @@
 Multi-Tier App Troubleshooting Playground 🛠️
 
-Hands-on AWS lab for deploying, monitoring, and troubleshooting multi-tier web apps.
+Hands-on AWS lab for deploying, monitoring, and troubleshooting multi-tier web applications.
+Focus: CloudOps, troubleshooting, infrastructure-as-code, and incident response.
 
-What It Does (5 seconds)
+🚀 Quick Overview
+Feature	What You Learn	Screenshot
+Multi-tier AWS deployment	Deploy Frontend → Backend → Database	
 
-Deploys a realistic multi-tier AWS environment: frontend, backend, database.
+Operational failure simulation	Practice incident response & root cause analysis	
 
-Simulates operational failures for hands-on troubleshooting.
+Monitoring dashboards & alerts	Build CloudWatch dashboards & automated alerts	
 
-Builds monitoring dashboards and automated alerts for real-world practice.
+CI/CD automation	Deploy & update infrastructure with Terraform	
 
-Problem It Solves
+Tip: Clicking thumbnails can link to full-size images in screenshots/.
 
-Practice incident response, troubleshooting, and root cause analysis without touching production systems.
+🏗 System Architecture
 
-AWS Services & Tech
+Diagram of multi-tier setup:
 
-EC2, VPC, ELB, RDS, IAM, S3
+Legend:
 
-CloudWatch (dashboards, alarms, logs)
+🟦 EC2 Frontend
 
-Lambda, SNS, Python scripting
+🟩 EC2 Backend
 
-Terraform & CloudFormation
+🟧 RDS Database
 
-Skills Demonstrated
+🔵 VPC, Subnets, Security Groups
 
-Multi-tier AWS deployment & infrastructure as code
+⚡ ELB & Load Balancing
 
-Troubleshooting EC2, RDS, IAM, ELB, networking
-
-Monitoring & automated alerting pipelines
-
-Incident response documentation
-
-CI/CD workflows & Python automation
-
-Quick Start
-git clone <repo-url>
+🏁 Quick Start
+git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground.git
 cd Multi-Tier-App-Troubleshooting-Playground
 terraform init
 terraform apply
@@ -47,48 +42,83 @@ Verify connectivity & IAM permissions.
 
 Start frontend/backend services & test database access.
 
-Run troubleshooting scenarios:
+Run troubleshooting scenarios (see below).
 
-EC2 failure recovery
+🛠 Troubleshooting Scenarios
+Scenario	Key Skills	Screenshot
+EC2 Failure Recovery	Identify & fix failed instances	
 
-IAM permission errors
+IAM Permission Errors	Debug IAM roles/policies	
 
-Database connectivity issues
+Database Connectivity	Resolve RDS & network issues	
 
-Load balancer health check failures
+Load Balancer Health Checks	Diagnose & correct failures	
 
-Network routing problems
-
-Lab Walkthrough (Screenshots)
-
-Authentication & Access Control
-
-
-Monitoring Dashboard
+Network Routing Problems	Troubleshoot VPC & subnet routing	
+🖼 Lab Walkthrough (Screenshots)
+1️⃣ Login Screens
 
 
-Error Logs
 
 
-API Testing & Validation
 
 
-System Architecture
 
 
-Project Structure
-backend/          # Application tier
-frontend/         # Web tier
-database/         # DB scripts
-diagrams/         # Architecture diagrams
-docs/             # Troubleshooting playbooks
-screenshots/      # Lab walkthrough images
-workflows/        # CI/CD automation
-main.tf           # Terraform deployment
-outputs.tf        # Terraform outputs
-variables.tf      # Config variables
 
-Contact
+
+2️⃣ Dashboard Screens
+
+
+
+
+
+
+
+
+3️⃣ Error Logs
+
+
+
+
+
+
+
+
+4️⃣ API Responses
+
+
+
+
+
+
+
+
+📁 Project Structure
+backend/      # Application tier
+frontend/     # Web tier
+database/     # DB scripts
+diagrams/     # Architecture diagrams
+docs/         # Troubleshooting playbooks
+screenshots/  # Lab walkthrough images
+workflows/    # CI/CD automation
+main.tf       # Terraform deployment
+outputs.tf    # Terraform outputs
+variables.tf  # Config variables
+
+💡 Skills Demonstrated
+
+Multi-tier AWS deployment & infrastructure-as-code
+
+Troubleshooting EC2, RDS, IAM, ELB, networking
+
+Monitoring & automated alert pipelines
+
+Incident response documentation & playbooks
+
+Python scripting & CI/CD automation
+
+📬 Contact
 
 GitHub: charles-bucher
 
@@ -98,6 +128,11 @@ LinkedIn: charles-bucher-cloud
 
 Email: quietopscb@gmail.com
 
-License
+⚖️ License
 
 MIT License
+
+📝 About
+
+AWS CloudOps lab: deploy, monitor, and troubleshoot multi-tier web apps using EC2, VPC, ELB, Terraform & CloudFormation. Focused on incident response, operational excellence, and real-world troubleshooting skills.
+

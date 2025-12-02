@@ -1,27 +1,31 @@
 # Multi-Tier App Troubleshooting Playground 🛠️
 
-Hands-on AWS lab to deploy, monitor, and troubleshoot multi-tier web applications. Focus: CloudOps, incident response, IaC, and operational excellence.
+![AWS](https://img.shields.io/badge/AWS-CloudOps-orange) ![Terraform](https://img.shields.io/badge/Terraform-IaC-blue) ![Python](https://img.shields.io/badge/Python-Automation-green)
+
+**5-second glance:** Hands-on AWS lab for deploying, monitoring, and troubleshooting multi-tier web applications with EC2, VPC, RDS, ELB, Terraform & CloudFormation. Focus on CloudOps, incident response, and operational excellence.
 
 ---
 
 ## 🚀 Project Overview
 
 | Feature | What You Learn | Screenshot |
-|---------|----------------|-----------|
-| Multi-tier AWS deployment | Deploy Frontend → Backend → Database | ![Login](screenshots/Multi_01_Login.png) |
-| Operational failure simulation | Practice incident response & root cause analysis | ![Error Logs](screenshots/Multi_03_ErrorLogs.png) |
-| Monitoring dashboards & alerts | Build CloudWatch dashboards & automated alerts | ![API Response](screenshots/Multi_05_APIResponse.png) |
+|---------|----------------|------------|
+| Multi-tier AWS deployment | Deploy Frontend → Backend → Database | ![Login](screenshots/Multi_01_Login.png)<br>**Skill:** Frontend/Backend connectivity |
+| Operational failure simulation | Practice incident response & root cause analysis | ![Error Logs](screenshots/Multi_03_ErrorLogs.png)<br>**Skill:** Troubleshooting EC2, IAM, RDS |
+| Monitoring dashboards & alerts | Build CloudWatch dashboards & automated alerts | ![API Response](screenshots/Multi_05_APIResponse.png)<br>**Skill:** Monitoring & alert pipelines |
 | CI/CD automation | Deploy & update infrastructure with Terraform | - |
 
 ---
 
-🏗 System Architecture
+## 🏗 System Architecture
 
-**Primary Diagram:**  
-![Primary Diagram](diagrams/Multi-Tier_Diagram.png)
+### Primary Diagram
+![Primary Diagram](diagrams/Multi-Tier_Diagram.png)  
+*Shows the full multi-tier architecture: Frontend, Backend, Database, Load Balancer, and VPC layout.*
 
-**Alternate / Detailed Diagram:**  
-![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)
+### Alternate / Detailed Diagram
+![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)  
+*Detailed view of network routing, subnets, security groups, and IAM role assignments.*
 
 ---
 
@@ -32,12 +36,9 @@ git clone https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playg
 cd Multi-Tier-App-Troubleshooting-Playground
 terraform init
 terraform apply
-Verify connectivity & IAM permissions
-
-Start frontend/backend services & test database access
-
-Run troubleshooting scenarios (see below)
-
+# Verify connectivity & IAM permissions
+# Start frontend/backend services & test database access
+# Run troubleshooting scenarios (see below)
 🛠 Troubleshooting Scenarios
 Scenario	Key Skills	Screenshot
 EC2 Failure Recovery	Identify & fix failed instances	
@@ -88,4 +89,3 @@ yaml
 Copy code
 
 ---
-

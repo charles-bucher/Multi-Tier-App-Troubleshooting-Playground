@@ -15,7 +15,7 @@ Hands-on AWS lab to deploy, monitor, and troubleshoot multi-tier web application
 
 ---
 
-## 🏗 System Architecture
+🏗 System Architecture
 
 **Primary Diagram:**  
 ![Primary Diagram](diagrams/Multi-Tier_Diagram.png)

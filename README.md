@@ -1,74 +1,76 @@
+[![AWS](https://img.shields.io/badge/AWS-CloudOps-orange?logo=amazon-aws)](https://aws.amazon.com/) 
+[![Terraform](https://img.shields.io/badge/Terraform-Infrastructure-blue?logo=terraform)](https://www.terraform.io/) 
+[![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)](https://www.python.org/) 
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
+# Multi-Tier App Troubleshooting Playground
 
-🌐 Multi‑Tier App Troubleshooting Playground
-Terraform
-AWS
-Python
-Support
+**AWS CloudOps lab**: deploy, monitor, and troubleshoot multi-tier web apps using EC2, VPC, Load Balancers, Terraform & CloudFormation. Focus on incident response & operational excellence.
 
-🏗️ Architecture Overview
-Architecture Diagram
-Multi-tier AWS app with EC2 frontend, RDS backend, VPC networking, IAM roles, load balancer, and CloudWatch + Lambda for incident response.
+---
 
-🚀 Troubleshooting Walkthrough
-01️⃣ Login Failure
-Badge
-- Simulated IAM misconfig blocking EC2 login
-- Screenshot:
-Login Error
+## Troubleshooting Walkthrough
 
-02️⃣ Dashboard Timeout
-Badge
-- Frontend EC2 unable to reach backend RDS
-- Screenshot:
-Dashboard Timeout
+### Step 1: User Login
+![User Login](screenshots/Multi_01_UserLogin.png)
 
-03️⃣ Error Logs Captured
-Badge
-- CloudWatch logs show DB connection errors
-- Screenshot:
-Error Logs
+### Step 2: Main Dashboard
+![Main Dashboard](screenshots/Multi_02_MainDashboard.png)
 
-05️⃣ API Response Failure
-Badge
-- Lambda misfire during auto-remediation
-- Screenshot:
-API Response
+### Step 3: Error Logs View
+![Error Logs View](screenshots/Multi_03_ErrorLogsView.png)
 
-06–08️⃣ Recovery Validation
-- IAM roles corrected, EC2 reconnected
-- Dashboard restored, logs clean
-- Screenshots:
-Login Restored
-Dashboard Restored
-Logs Clean
+### Step 4: API Response Failure
+![API Response Failure](screenshots/Multi_05_APIResponse.png)
 
-🔁 Iteration & Monitoring
-- Additional cycles simulate new failures
-- API responses validated across tiers
-- Screenshots:
-API Response
-Login
-Dashboard
-Error Logs
+### Step 5: Admin Login Success
+![Admin Login Success](screenshots/Multi_06_AdminLogin.png)
 
-🔄 Final Cycle
-- Final round of troubleshooting and validation
-- Screenshots:
-API Response
-Login
-Dashboard
-Error Logs
-API Response
-Login
+### Step 6: Admin Error Logs Verification
+![Admin Error Logs Verification](screenshots/Multi_07_AdminErrorLogs.png)
 
-💡 Philosophy
-“I don’t rely on tutorials alone — I break it, fix it, automate it, and document it.”
-No shortcuts. No hype. Just consistent learning and execution.
+### Step 7: Admin API Response Validated
+![Admin API Response Validated](screenshots/Multi_08_AdminAPIResponse.png)
 
+### Step 8: End-to-End Final Verification
+![End-to-End Final Verification](screenshots/Multi_17_TestLogin.png)
 
-🔗 Connect
-- LinkedIn: charles-bucher-cloud
-- Portfolio: charles-bucher.github.io
-- GitHub: charles-bucher
+---
+
+## Project Structure
+
+Multi-Tier-App-Troubleshooting-Playground/
+├─ backend/
+├─ frontend/
+├─ database/
+├─ diagrams/
+├─ monitoring/
+├─ scenarios/
+├─ screenshots/
+├─ scripts/
+├─ terraform/
+├─ workflows/
+├─ README.md
+├─ main.tf
+├─ outputs.tf
+└─ LICENSE
+
+yaml
+Copy code
+
+---
+
+## Why This Project Matters
+
+- Demonstrates **real-world multi-tier AWS troubleshooting** scenarios.
+- Shows **CloudOps automation, monitoring, and incident response skills**.
+- Clean, organized, and documented for **easy understanding by employers or recruiters**.
+
+---
+
+## Connect
+
+- LinkedIn: [charles-bucher-cloud](https://www.linkedin.com/in/charles-bucher-cloud/)
+- Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)
+- GitHub: [charles-bucher](https://github.com/charles-bucher)
 - Email: quietopscb@gmail.com

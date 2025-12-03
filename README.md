@@ -1,87 +1,79 @@
-Multi-Tier App Troubleshooting Playground
-Hands-on AWS CloudOps lab for real troubleshooting, real incidents, and real resume power.
+# Charles Bucher 👋
 
-(What hiring managers see in 5 seconds: AWS Networking • EC2/App Issues • Multi-Tier debugging • Logs • Monitoring • SG/NACL mistakes • Broken app recovery)
+**IT Support & Cloud Support | AWS | Windows & Linux | Self-Taught Hands-On Labs | Seeking Remote Roles**
 
-📌 System Architecture
-Primary Diagram
+📍 Pinellas Park, Florida | 📧 quietopscb@gmail.com | 🌐 [Portfolio](https://charles-bucher.github.io) | [LinkedIn](https://www.linkedin.com/in/charles-bucher-cloud)
 
-Shows the entire multi-tier layout: Load Balancer → Frontend → Backend API → Database → VPC networking + routing paths.
+---
 
-![Primary Diagram](diagrams/Multi-Tier_Diagram.png)
-*High-level view of the full multi-tier system. Demonstrates understanding of VPC design, subnets, routing, load balancing, and service interactions.*
+## About Me
 
-Detailed Diagram
+I’m transitioning into **IT Support and Cloud Operations** after over a decade running high-pressure operational roles where **problem-solving, communication, and reliability were non-negotiable**.  
 
-Shows traffic flow, SG rules, IAM roles, subnet isolation, and where real troubleshooting happens.
+I’m self-taught in AWS, Windows & Linux administration, networking basics, Python automation, and CloudOps workflows. I build hands-on labs to **simulate real incidents**, troubleshoot them, and automate responses—documenting everything on GitHub.  
 
-![Detailed Diagram](diagrams/Multi-Tier_diagram_2.png)
-*Deep dive into how traffic and AWS services interact. Shows where failures typically occur and what a Cloud Support engineer checks first.*
+I’m seeking **entry-level to intermediate cloud support or IT support roles**, where my operational experience meets my technical skills to drive real results.
 
-📸 Key Screenshots (with real skill explanations)
+**My goal:** Break into Cloud/IT support, grow fast, and eventually leverage skills for **investments in real estate** for long-term financial freedom.
 
-Use this format for each screenshot you're adding later:
+---
 
-### Login Page Connectivity  
-![Login Test](screenshots/Multi_01_Login.png)  
-*Confirms frontend reachability, EC2 health, SG ingress, and correct interface binding.*
+## Skills
 
-### Backend API Failure  
-![API Debug](screenshots/Multi_02_API_Failure.png)  
-*Shows how to diagnose backend timeouts, incorrect SG rules, and ALB target group health.*
+- **Cloud & Monitoring:** AWS EC2, S3, VPC, IAM basics, CloudWatch, Lambda, GuardDuty  
+- **Infrastructure as Code:** Terraform, CloudFormation  
+- **Programming & Automation:** Python, Bash  
+- **System Administration:** Windows & Linux CLI, Active Directory basics  
+- **Support & Troubleshooting:** Incident response, CI/CD pipelines, operational workflow stability  
+- **Other:** Git, GitHub, Documentation, Team Communication  
 
-### RDS Connectivity Test  
-![DB Check](screenshots/Multi_03_DB_Check.png)  
-*Verifies VPC/subnet routing, NACL rules, and DB SG ingress/egress — core AWS support skills.*
+---
 
-### Security Group Misconfiguration  
-![SG Error](screenshots/Multi_04_SG_Error.png)  
-*Classic “works on frontend, breaks on backend” scenario — demonstrates practical debugging.*
+## Featured Projects
 
-### Successful Recovery  
-![Success](screenshots/Multi_05_Success.png)  
-*Final fixed state proving ability to diagnose, fix, validate, and close the incident properly.*
+### [AWS_Cloudops_Suite](https://github.com/charles-bucher/AWS_Cloudops_Suite)
+“Built a full CloudOps pipeline: alerting, auto-remediation, security monitoring. Replicates real Cloud Support workflows.”
 
+**Key Skills:** Python, Terraform, AWS CloudWatch, Lambda, GuardDuty, CI/CD automation
 
-Add or remove sections depending on which screenshots you use.
-The captions are the key — they show a hiring manager that you understand why the screenshot matters.
+---
 
-🛠️ Troubleshooting Scenarios (Clean Format)
-1. Frontend loads, but backend is dead
+### [Multi-Tier-App-Troubleshooting-Playground](https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
+Simulated multi-tier AWS applications (EC2, RDS, VPC, Load Balancers) with **planned outages, IAM failures, and DB errors**. Built hands-on troubleshooting exercises mirroring real-world IT workflows.
 
-Skills shown:
+**Key Skills:** AWS EC2, RDS, VPC, Terraform, CloudFormation, Lambda, Multi-tier troubleshooting
 
-EC2 logs
+---
 
-ALB target health
+### [AWS_Cloud_Support_Sim](https://github.com/charles-bucher/AWS_Cloud_Support_Sim)
+Simulates a Cloud Support engineer workflow, documenting **real AWS troubleshooting scenarios** from ticket creation to resolution.
 
-Backend SG/NACL issues
+**Key Skills:** CloudWatch, Python automation, CI/CD pipelines, operational incident response
 
-cURL testing
+---
 
-CloudWatch Log Insights
+### [charles-bucher.github.io](https://charles-bucher.github.io)
+Portfolio showcasing **CloudOps & NOC labs**, automated monitoring pipelines, and incident response workflows. Demonstrates **operational troubleshooting and hands-on automation**.
 
-2. Database unreachable from backend
+**Key Skills:** Python, Jekyll, GitHub Pages, AWS, CI/CD
 
-Skills shown:
+---
 
-VPC routing + subnets
+---
 
-RDS SG vs EC2 SG relationships
+## Philosophy
 
-Telnet/NC connectivity testing
+I don’t rely on tutorials alone—I **break it, fix it, automate it, and document it**. I show real-world CloudOps experience through **hands-on labs and GitHub repos**.  
 
-IAM role verification
+**No shortcuts. No hype. Just consistent learning and execution.**
 
-3. ALB returns 504 timeout
+---
 
-Skills shown:
+## Let’s Connect
 
-ASG scaling/draining
+- LinkedIn: [charles-bucher-cloud](https://www.linkedin.com/in/charles-bucher-cloud)  
+- Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)  
+- GitHub: [charles-bucher](https://github.com/charles-bucher)  
+- Email: quietopscb@gmail.com  
 
-ALB health check path debugging
-
-App misconfiguration
-
-Metric-based isolation logic
-
+---

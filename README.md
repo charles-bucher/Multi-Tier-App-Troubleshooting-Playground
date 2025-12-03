@@ -1,79 +1,74 @@
-# Charles Bucher 👋
 
-**IT Support & Cloud Support | AWS | Windows & Linux | Self-Taught Hands-On Labs | Seeking Remote Roles**
 
-📍 Pinellas Park, Florida | 📧 quietopscb@gmail.com | 🌐 [Portfolio](https://charles-bucher.github.io) | [LinkedIn](https://www.linkedin.com/in/charles-bucher-cloud)
+🌐 Multi‑Tier App Troubleshooting Playground
+Terraform
+AWS
+Python
+Support
 
----
+🏗️ Architecture Overview
+Architecture Diagram
+Multi-tier AWS app with EC2 frontend, RDS backend, VPC networking, IAM roles, load balancer, and CloudWatch + Lambda for incident response.
 
-## About Me
+🚀 Troubleshooting Walkthrough
+01️⃣ Login Failure
+Badge
+- Simulated IAM misconfig blocking EC2 login
+- Screenshot:
+Login Error
 
-I’m transitioning into **IT Support and Cloud Operations** after over a decade running high-pressure operational roles where **problem-solving, communication, and reliability were non-negotiable**.  
+02️⃣ Dashboard Timeout
+Badge
+- Frontend EC2 unable to reach backend RDS
+- Screenshot:
+Dashboard Timeout
 
-I’m self-taught in AWS, Windows & Linux administration, networking basics, Python automation, and CloudOps workflows. I build hands-on labs to **simulate real incidents**, troubleshoot them, and automate responses—documenting everything on GitHub.  
+03️⃣ Error Logs Captured
+Badge
+- CloudWatch logs show DB connection errors
+- Screenshot:
+Error Logs
 
-I’m seeking **entry-level to intermediate cloud support or IT support roles**, where my operational experience meets my technical skills to drive real results.
+05️⃣ API Response Failure
+Badge
+- Lambda misfire during auto-remediation
+- Screenshot:
+API Response
 
-**My goal:** Break into Cloud/IT support, grow fast, and eventually leverage skills for **investments in real estate** for long-term financial freedom.
+06–08️⃣ Recovery Validation
+- IAM roles corrected, EC2 reconnected
+- Dashboard restored, logs clean
+- Screenshots:
+Login Restored
+Dashboard Restored
+Logs Clean
 
----
+🔁 Iteration & Monitoring
+- Additional cycles simulate new failures
+- API responses validated across tiers
+- Screenshots:
+API Response
+Login
+Dashboard
+Error Logs
 
-## Skills
+🔄 Final Cycle
+- Final round of troubleshooting and validation
+- Screenshots:
+API Response
+Login
+Dashboard
+Error Logs
+API Response
+Login
 
-- **Cloud & Monitoring:** AWS EC2, S3, VPC, IAM basics, CloudWatch, Lambda, GuardDuty  
-- **Infrastructure as Code:** Terraform, CloudFormation  
-- **Programming & Automation:** Python, Bash  
-- **System Administration:** Windows & Linux CLI, Active Directory basics  
-- **Support & Troubleshooting:** Incident response, CI/CD pipelines, operational workflow stability  
-- **Other:** Git, GitHub, Documentation, Team Communication  
+💡 Philosophy
+“I don’t rely on tutorials alone — I break it, fix it, automate it, and document it.”
+No shortcuts. No hype. Just consistent learning and execution.
 
----
 
-## Featured Projects
-
-### [AWS_Cloudops_Suite](https://github.com/charles-bucher/AWS_Cloudops_Suite)
-“Built a full CloudOps pipeline: alerting, auto-remediation, security monitoring. Replicates real Cloud Support workflows.”
-
-**Key Skills:** Python, Terraform, AWS CloudWatch, Lambda, GuardDuty, CI/CD automation
-
----
-
-### [Multi-Tier-App-Troubleshooting-Playground](https://github.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground)
-Simulated multi-tier AWS applications (EC2, RDS, VPC, Load Balancers) with **planned outages, IAM failures, and DB errors**. Built hands-on troubleshooting exercises mirroring real-world IT workflows.
-
-**Key Skills:** AWS EC2, RDS, VPC, Terraform, CloudFormation, Lambda, Multi-tier troubleshooting
-
----
-
-### [AWS_Cloud_Support_Sim](https://github.com/charles-bucher/AWS_Cloud_Support_Sim)
-Simulates a Cloud Support engineer workflow, documenting **real AWS troubleshooting scenarios** from ticket creation to resolution.
-
-**Key Skills:** CloudWatch, Python automation, CI/CD pipelines, operational incident response
-
----
-
-### [charles-bucher.github.io](https://charles-bucher.github.io)
-Portfolio showcasing **CloudOps & NOC labs**, automated monitoring pipelines, and incident response workflows. Demonstrates **operational troubleshooting and hands-on automation**.
-
-**Key Skills:** Python, Jekyll, GitHub Pages, AWS, CI/CD
-
----
-
----
-
-## Philosophy
-
-I don’t rely on tutorials alone—I **break it, fix it, automate it, and document it**. I show real-world CloudOps experience through **hands-on labs and GitHub repos**.  
-
-**No shortcuts. No hype. Just consistent learning and execution.**
-
----
-
-## Let’s Connect
-
-- LinkedIn: [charles-bucher-cloud](https://www.linkedin.com/in/charles-bucher-cloud)  
-- Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)  
-- GitHub: [charles-bucher](https://github.com/charles-bucher)  
-- Email: quietopscb@gmail.com  
-
----
+🔗 Connect
+- LinkedIn: charles-bucher-cloud
+- Portfolio: charles-bucher.github.io
+- GitHub: charles-bucher
+- Email: quietopscb@gmail.com

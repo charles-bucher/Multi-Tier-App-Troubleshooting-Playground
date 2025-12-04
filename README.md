@@ -339,71 +339,74 @@ graph TB
 
 ---
 
-**Step 6-7: Admin Error Log Analysis**
-![Admin Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_07_AdminErrorLogs.png)
+**Step 6: Admin Error Log Analysis**
+![Admin Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_06_AdminErrorLogs.png)
 *Detailed error log review from admin perspective*
 
+---
+
+**Step 7: Combined Admin Error Logs**
 ![Combined Admin Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_07_08_AdminErrorLogs.png)
 *Aggregated error log analysis*
 
 ---
 
 **Step 8: Admin API Validation**
-![Admin API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_08_10_AdminAPIResponse.png)
+![Admin API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_08_AdminAPIResponse.png)
 *API response verification with admin privileges*
 
 ---
 
-**Step 9: Secondary User Flow**
-![Secondary Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_09_11_SecondaryLogin.png)
+**Step 9: Secondary User Login**
+![Secondary Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_09_SecondaryLogin.png)
 *Testing multi-user scenarios*
 
 ---
 
 **Step 10: Secondary Dashboard**
-![Secondary Dashboard](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_10_12_SecondaryDashboard.png)
+![Secondary Dashboard](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_10_SecondaryDashboard.png)
 *User-specific dashboard rendering*
 
 ---
 
 **Step 11: Secondary Error Logs**
-![Secondary Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_11_13_SecondaryErrorLogs.png)
+![Secondary Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_11_SecondaryErrorLogs.png)
 *Error logging from different user context*
 
 ---
 
 **Step 12: Secondary API Response**
-![Secondary API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_12_14_SecondaryAPIResponse.png)
+![Secondary API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_12_SecondaryAPIResponse.png)
 *API behavior with secondary user credentials*
 
 ---
 
-**Step 13: Tertiary User Testing**
-![Tertiary Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_13_15_TertiaryLogin.png)
+**Step 13: Tertiary User Login**
+![Tertiary Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_13_TertiaryLogin.png)
 *Additional user scenario validation*
 
 ---
 
 **Step 14: Tertiary Dashboard**
-![Tertiary Dashboard](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_14_17_TertiaryDashboard.png)
+![Tertiary Dashboard](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_14_TertiaryDashboard.png)
 *Dashboard consistency across users*
 
 ---
 
 **Step 15: Tertiary Error Logs**
-![Tertiary Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_15_18_TertiaryErrorLogs.png)
+![Tertiary Error Logs](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_15_TertiaryErrorLogs.png)
 *Error tracking across multiple user sessions*
 
 ---
 
 **Step 16: Tertiary API Response**
-![Tertiary API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_16_20_TertiaryAPIResponse.png)
+![Tertiary API Response](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_16_TertiaryAPIResponse.png)
 *API consistency validation*
 
 ---
 
-**Step 17: Final Test Authentication**
-![Final Test Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_17_21_TestLogin.png)
+**Step 17: Final Test Login**
+![Final Test Login](https://raw.githubusercontent.com/charles-bucher/Multi-Tier-App-Troubleshooting-Playground/main/screenshots/Multi_17_TestLogin.png)
 *Comprehensive testing completion*
 
 </details>
